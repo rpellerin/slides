@@ -8,13 +8,13 @@
 2. Create releases
 3. Develop new features while fixing bugs on a production release
 
-<img src="versioning.png" alt="Versioning" class="w25" />
+<img src="assets/versioning.png" alt="Versioning" class="w25" />
 
 -------------------------------------------
 
 # Decentralized & Collaborative
 
-<img src="decentralized.png" alt="Decentralized" class="w70" />
+<img src="assets/decentralized.png" alt="Decentralized" class="w70" />
 
 -------------------------------------------
 
@@ -22,11 +22,11 @@
 
 * Easily revert changes
 
-<img src="undo.png" alt="Undo" class="w70" />
+<img src="assets/undo.png" alt="Undo" class="w70" />
 
 -------------------------------------------
 
-![](start.jpg)
+![](assets/start.jpg)
 
 -------------------------------------------
 
@@ -62,7 +62,7 @@ $ git clone git@github.com:john/project.git project
 
 # Fundamentals
 
-<img src="thunar.png" alt="Thunar" class="w50" />
+<img src="assets/thunar.png" alt="Thunar" class="w50" />
 
 * **Workspace** (*aka* Working tree, Working directory)
 * **Index** (*aka* Staging area)
@@ -73,7 +73,7 @@ $ git clone git@github.com:john/project.git project
 
 # All you need is ~~love~~ Git
 
-<img src="schema.png" alt="Schema" class="w60" />
+<img src="assets/schema.png" alt="Schema" class="w60" />
 
 -------------------------------------------
 
@@ -124,13 +124,13 @@ $ git log # Check what has been done
 
 # Basic workflow
 
-<img src="workflow_1.png" alt="Workflow" class="w35" />
+<img src="assets/workflow_1.png" alt="Workflow" class="w35" />
 
 -------------------------------------------
 
 # Successful workflow
 
-<img src="workflow_2.png" alt="Workflow" class="w40" />
+<img src="assets/workflow_2.png" alt="Workflow" class="w40" />
 
 -------------------------------------------
 
@@ -138,11 +138,11 @@ $ git log # Check what has been done
 
 * Always use **Command Line Interface**, avoid graphical tools
 
-<img src="cli.png" alt="CLIvsGUI" class="w50" />
+<img src="assets/cli.png" alt="CLIvsGUI" class="w50" />
 
 -------------------------------------------
 
-<img src="rtfm.png" alt="RTFM" class="w50" />
+<img src="assets/rtfm.png" alt="RTFM" class="w50" />
 
 [http://git-scm.com/](http://git-scm.com/)  
 [https://try.github.io/](https://try.github.io/)
