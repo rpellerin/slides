@@ -24,14 +24,14 @@ GI02, UTC
 
 # Only $35
 
-<video loop src="assets/happy-dog.mp4" loop></video>
+<video autoplay loop src="assets/happy-dog.mp4" loop></video>
 
 -------------------------------------------
 
 # Specifications
 
 - Micro SD card slot
-- A 900MHz quad-core ARM Cortex-A7 CPU
+- 900MHz quad-core ARM Cortex-A7 CPU
 - 1GB RAM
 - 4 USB ports
 - 40 GPIO pins
@@ -51,7 +51,7 @@ GI02, UTC
 
 # Raspbian (based on Debian 8)
 
-<video loop src="assets/ingenieur-informaticien.mp4" loop></video>
+<video autoplay loop src="assets/ingenieur-informaticien.mp4" loop></video>
 
 -------------------------------------------
 
@@ -63,17 +63,49 @@ GI02, UTC
 
 # Don't rely on anyone
 
-<video loop src="assets/hamster.mp4" loop></video>
+<video autoplay loop src="assets/hamster.mp4" loop></video>
 
 -------------------------------------------
 
 # Improve your skills
 
-<video loop src="assets/bodybuilding-fail.mp4" loop></video>
+<video autoplay loop src="assets/bodybuilding-fail.mp4" loop></video>
 
 -------------------------------------------
 
-Coming soon
+# You said services?
+
+<style>
+img {
+  vertical-align: middle
+}
+</style>
+
+<img src="assets/squid.png" class="w15" /> <img src="assets/transmission.png" class="w15" /> <img src="assets/openvpn.png" class="w15" /> <img src="assets/git.png" class="w15" /> <img src="assets/samba.png" class="w15" />
+
+<img src="assets/apache.gif" class="w20" /> <img src="assets/php.png" class="w20" /> <img src="assets/mysql.jpg" class="w20" /> <img src="assets/postgresql.png" class="w20" />
+
+<img src="assets/owncloud.png" class="w30" />
+
+-------------------------------------------
+
+# 24/7
+
+(photo with external HDD)
+
+-------------------------------------------
+
+# Media center
+
+(picture with TV)
+
+-------------------------------------------
+
+<br /><br /><br /><br /><br /><br /><br />
+
+[korben.info/idees-raspberry-pi.html](http://korben.info/idees-raspberry-pi.html)
+
+[github.com/rpellerin/raspberry-pi-as-a-home-server-PDF](https://github.com/rpellerin/raspberry-pi-as-a-home-server-PDF)
 
 -------------------------------------------
 

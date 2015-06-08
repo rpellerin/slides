@@ -2,7 +2,6 @@ all: slides.html
 
 slides.html: slides.md ../style.html
 	pandoc -t dzslides \
-		--self-contained \
 		--include-in-header=../style.html \
 		-s slides.md \
 		-o slides.html
