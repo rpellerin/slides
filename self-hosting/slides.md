@@ -6,7 +6,7 @@
 
 # Who Am I?
 
-GI02, UTC
+## GI02, UTC
 
 [romainpellerin.eu](http://romainpellerin.eu)
 
@@ -24,7 +24,7 @@ GI02, UTC
 
 # Only $35
 
-<video autoplay loop src="assets/happy-dog.mp4" loop></video>
+<video autoplay loop src="assets/happy-dog.mp4" ></video>
 
 -------------------------------------------
 
@@ -51,7 +51,7 @@ GI02, UTC
 
 # Raspbian (based on Debian 8)
 
-<video autoplay loop src="assets/ingenieur-informaticien.mp4" loop></video>
+<video autoplay loop src="assets/ingenieur-informaticien.mp4" ></video>
 
 -------------------------------------------
 
@@ -61,15 +61,21 @@ GI02, UTC
 
 -------------------------------------------
 
-# Don't rely on anyone
+# Be independent
 
-<video autoplay loop src="assets/hamster.mp4" loop></video>
+<video autoplay loop src="assets/hamster.mp4" ></video>
 
 -------------------------------------------
 
 # Improve your skills
 
-<video autoplay loop src="assets/bodybuilding-fail.mp4" loop></video>
+<video autoplay loop src="assets/bodybuilding-fail.mp4" ></video>
+
+-------------------------------------------
+
+# Save money
+
+<video autoplay loop src="assets/dollars.mp4" ></video>
 
 -------------------------------------------
 
@@ -91,17 +97,17 @@ img {
 
 # 24/7
 
-(photo with external HDD)
+![](assets/my-rpi.jpg)
 
 -------------------------------------------
 
-# Media center
-
-(picture with TV)
+![](assets/airpi.png)
 
 -------------------------------------------
 
-<br /><br /><br /><br /><br /><br /><br />
+# Some ideas
+
+<br /><br /><br />
 
 [korben.info/idees-raspberry-pi.html](http://korben.info/idees-raspberry-pi.html)
 
