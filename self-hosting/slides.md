@@ -1,6 +1,18 @@
 % Self-hosted services with a Raspberry Pi
-% Romain Pellerin <a target="_blank" href="https://twitter.com/romainpellerin">@romainpellerin</a>
+% Romain Pellerin
 % Hackathon UTC 2015-06-13
+
+-------------------------------------------
+
+# Who Am I?
+
+GI02, UTC
+
+[romainpellerin.eu](http://romainpellerin.eu)
+
+[github.com/rpellerin](https://github.com/rpellerin)
+
+[\@romainpellerin](https://twitter.com/romainpellerin)
 
 -------------------------------------------
 
@@ -23,17 +35,47 @@
 - 1GB RAM
 - 4 USB ports
 - 40 GPIO pins
-- Full HDMI port (1080P is OK!)
+- Full HDMI port (1080P fully supported)
 - Ethernet port 10/100 MB
+
+-------------------------------------------
+
+# Specifications
+
 - Combined 3.5mm audio jack and composite video
 - VideoCore IV 3D graphics core
+- Camera interface (CSI)
+- Display interface (DSI)
 
-<span style="font-size: .6em">+ a Camera interface (CSI) and a Display interface (DSI)</span>
+-------------------------------------------
+
+# Raspbian (based on Debian 8)
+
+<video loop src="assets/ingenieur-informaticien.mp4" loop></video>
+
+-------------------------------------------
+
+# Why self-hosting?
+
+![](assets/not-sure.png)
+
 -------------------------------------------
 
 # Don't rely on anyone
 
 <video loop src="assets/hamster.mp4" loop></video>
+
+-------------------------------------------
+
+# Improve your skills
+
+<video loop src="assets/bodybuilding-fail.mp4" loop></video>
+
+-------------------------------------------
+
+Coming soon
+
+-------------------------------------------
 
 # Thanks
 
