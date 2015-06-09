@@ -1,10 +1,10 @@
 % Self-hosted services with a Raspberry Pi
 % Romain Pellerin
-% Hackathon UTC 2015-06-13
+% HumanTalks Compiègne 2015-06-09
 
 -------------------------------------------
 
-# Who Am I?
+# Hello, world!
 
 ## GI02, UTC
 
