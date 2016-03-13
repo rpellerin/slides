@@ -1,40 +1,88 @@
 <!DOCTYPE html>
 <head>
-<meta charset="utf-8">
-  <meta name="author" content="Romain Pellerin" />
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Romain Pellerin">
   <title>Elon Musk</title>
   <style type="text/css">code{white-space: pre;}</style>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
 <style>
-  html { background-color: black; }
-  body { background-color: white; border-radius: 12px}
+  html, .view body { background-color: black; counter-reset: slideidx; }
+  body, .view section { background-color: white; border-radius: 12px }
   /* A section is a slide. It's size is 800x600, and this will never change */
-  section {
-      font-family: Arial, serif;
-      font-size: 20pt;
-    }
-  address, blockquote, dl, fieldset, form, h1, h2, h3, h4, h5, h6, hr, ol, p, pre, table, ul, dl { padding: 10px 20px 10px 20px; }
-  h1, h2, h3 {
+  section, .view head > title {
+      /* The font from Google */
+      font-family: 'Oswald', arial, serif;
+      font-size: 30px;
+  }
+
+  .view section:after {
+    counter-increment: slideidx;
+    content: counter(slideidx, decimal-leading-zero);
+    position: absolute; bottom: -80px; right: 100px;
+    color: white;
+  }
+
+  .view head > title {
+    color: white;
     text-align: center;
-    margin: 10pt 10pt 20pt 10pt;
+    margin: 1em 0 1em 0;
   }
-  ul, ol {
-    margin: 10px 10px 10px 50px;
+
+  h1, h2 {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 80px;
   }
-  section.titleslide h1 { margin-top: 200px; }
-  h1.title { margin-top: 150px; }
-  h1 { font-size: 180%; }
-  h2 { font-size: 120%; }
-  h3 { font-size: 100%; }
-  q { quotes: "“" "”" "‘" "’"; }
-  blockquote { font-style: italic }
-  /* Figures are displayed full-page, with the caption on
-     top of the image/video */
+  h3 {
+    margin: 100px 0 50px 100px;
+  }
+
+  ul {
+      margin: 50px 200px;
+  }
+  li > ul {
+      margin: 15px 50px;
+  }
+
+  p {
+    margin: 75px;
+    font-size: 50px;
+  }
+
+  blockquote {
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-size: 60px;
+    padding: 50px;
+  }
+  blockquote:before {
+    content: open-quote;
+  }
+  blockquote:after {
+    content: close-quote;
+  }
+
+  /* Figures are displayed full-page, with the caption
+     on top of the image/video */
   figure {
     background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  figure > * {
+    position: absolute;
+  }
+  figure > img, figure > video {
+    width: 100%; height: 100%;
   }
   figcaption {
     margin: 70px;
+    font-size: 50px;
   }
+
   footer {
     position: absolute;
     bottom: 0;
@@ -51,10 +99,20 @@
      https://developer.mozilla.org/en/CSS/CSS_transitions
      How to use CSS3 Transitions: */
   section {
-      -moz-transition: left 400ms linear 0s;
-      -webkit-transition: left 400ms linear 0s;
-      -ms-transition: left 400ms linear 0s;
-      transition: left 400ms linear 0s;
+    -moz-transition: left 400ms linear 0s;
+    -webkit-transition: left 400ms linear 0s;
+    -ms-transition: left 400ms linear 0s;
+    transition: left 400ms linear 0s;
+  }
+  .view section {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
+  }
+
+  .view section[aria-selected] {
+    border: 5px red solid;
   }
 
   /* Before */
@@ -70,10 +128,17 @@
   .incremental > * { opacity: 1; }
 
   /* The current item */
-  .incremental > *[aria-selected] { color: red; opacity: 1; }
+  .incremental > *[aria-selected] { opacity: 1; }
 
   /* The items to-be-selected */
-  .incremental > *[aria-selected] ~ * { opacity: 0.2; }
+  .incremental > *[aria-selected] ~ * { opacity: 0; }
+
+  /* The progressbar, at the bottom of the slides, show the global
+     progress of the presentation. */
+  #progress-bar {
+    height: 2px;
+    background: #AAA;
+  }
 </style>
   <style>
   @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -97,6 +162,7 @@
   .w75 { width: 75%; }
   .w80 { width: 80%; }
   .w90 { width: 90%; }
+  .w100 { width: 100%; }
   
   body {
     border-radius: 0; /* override */
@@ -111,14 +177,13 @@
     color: inherit;
   }
   
-  h1, h2, h3 {
+  h1:not(.title), h2, h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: normal;
     position: relative;
     z-index: 100;
     background-color: rgba(255,255,255,0.7);
-    margin-left: 0;
-    margin-right: 0;
+    margin: 10pt 0 20pt 0;
   }
   
   h1 {
@@ -157,22 +222,60 @@
     right: 0;
   }
   
+  #progress-bar {
+      display: none;
+  }
+  
   </style>
 </head>
 <body>
 <section class="title">
   <h1 class="title">Elon Musk</h1>
-  <h2 class="author">Romain Pellerin</h2>
-  <h3 class="date">SI14 2016-03-14</h3>
+  <footer>
+    <span class="author">Romain Pellerin</span> · <span class="date">SI14 2016-03-17</span>
+  </footer>
 </section>
 <section class="slide level1">
 
 <figure>
-<img src="assets/cover.jpg" alt="" />
+<img src="assets/cover.jpg" />
 </figure>
 </section>
-<section id="rud-rapid-unexpected-disassembly" class="slide level1">
-<h1>RUD (Rapid Unexpected Disassembly)</h1>
+<section id="south-africa" class="slide level1">
+<h1>South Africa</h1>
+<h2 id="born-1971">Born 1971</h2>
+<p><img src="assets/southafrica.png" alt="South Africa map" class="w80" /></p>
+</section>
+<section id="the-american-dream" class="slide level1">
+<h1>The American Dream</h1>
+<h2 id="flew-to-canada-in-1989-then-to-the-us">Flew to Canada in 1989, then to the US</h2>
+<ul>
+<li>Queen's University (Ontario, Canada): undergraduate</li>
+<li>University of Pennsylvania (Philadelphia, US): BS in physics &amp; BS in economics</li>
+<li>...</li>
+</ul>
+</section>
+<section id="the-american-dream-1" class="slide level1">
+<h1>The American Dream</h1>
+<h2 id="flew-to-canada-in-1989-then-to-the-us-1">Flew to Canada in 1989, then to the US</h2>
+<ul>
+<li>...</li>
+<li>Stanford University (California, US): began a PhD in applied physics but dropped after 2 days</li>
+</ul>
+</section>
+<section id="zip2-paypal" class="slide level1">
+<h1>Zip2 &amp; Paypal</h1>
+<p><img src="assets/paypal.png" alt="Young Elon Musk" class="w100" /></p>
+</section>
+<section id="getting-down-to-business" class="slide level1">
+<h1>Getting down to business</h1>
+<h2 id="spacex">SpaceX</h2>
+<h2 id="tesla">Tesla</h2>
+<video autoplay loop src="assets/spacex.webm">
+</video>
+</section>
+<section id="rapid-unexpected-disassembly" class="slide level1">
+<h1>Rapid Unexpected Disassembly</h1>
 <video autoplay loop src="assets/RUD.mp4">
 </video>
 </section>
@@ -186,8 +289,48 @@
 <video autoplay loop src="assets/landing2.mp4">
 </video>
 </section>
+<section id="tesla-1" class="slide level1">
+<h1>Tesla</h1>
+<video autoplay loop src="assets/tesla.mp4">
+</video>
+</section>
+<section id="summon-auto-pilot" class="slide level1">
+<h1>Summon &amp; Auto Pilot</h1>
+<video autoplay loop src="assets/summon.mp4">
+</video>
+</section>
 <section class="slide level1">
 
+<figure>
+<img src="assets/tesla.jpg" />
+</figure>
+</section>
+<section id="whats-next" class="slide level1">
+<h1>What's next?</h1>
+<h3 id="section"> </h3>
+<h2 id="solarcity-to-keep-growing"><strong>SolarCity</strong> to keep growing</h2>
+<h2 id="hyperloop-to-come-true"><strong>HyperLoop</strong> to come true</h2>
+<h2 id="mars-to-be-colonized"><strong>Mars</strong> to be colonized</h2>
+</section>
+<section id="thanks" class="slide level1">
+<h1>Thanks</h1>
+<p><span style="color: gray; font-size: .8em">Video and photo credit:<br />Tesla &amp; SpaceX</span></p>
+</section>
+<section id="credits" class="slide level1">
+<h1>Credits</h1>
+<div style="font-size: .5em;">
+<ul>
+<li><a href="http://www.businessinsider.com/elon-musk-at-ignition-2013-9" class="uri">http://www.businessinsider.com/elon-musk-at-ignition-2013-9</a></li>
+<li><a href="http://www.elonmusk.info/1971/03/being-born.html" class="uri">http://www.elonmusk.info/1971/03/being-born.html</a></li>
+<li><a href="https://bizblock.wordpress.com/2015/01/04/7-reasons-why-elon-musk-is-the-craziest-ceo-of-all-time/" class="uri">https://bizblock.wordpress.com/2015/01/04/7-reasons-why-elon-musk-is-the-craziest-ceo-of-all-time/</a></li>
+<li><a href="https://www.youtube.com/watch?v=4_sLTe6-7SE" class="uri">https://www.youtube.com/watch?v=4_sLTe6-7SE</a></li>
+<li><a href="https://www.instagram.com/p/BAqirNbwEc0/" class="uri">https://www.instagram.com/p/BAqirNbwEc0/</a></li>
+<li><a href="https://www.youtube.com/watch?v=ANv5UfZsvZQ" class="uri">https://www.youtube.com/watch?v=ANv5UfZsvZQ</a></li>
+<li><a href="https://www.youtube.com/watch?v=PPQ67VVpsZs" class="uri">https://www.youtube.com/watch?v=PPQ67VVpsZs</a></li>
+<li><a href="https://www.youtube.com/watch?v=L2bZ1CWqvbA" class="uri">https://www.youtube.com/watch?v=L2bZ1CWqvbA</a></li>
+<li><a href="https://twitter.com/TeslaMotors/status/708717092460101632" class="uri">https://twitter.com/TeslaMotors/status/708717092460101632</a></li>
+</ul>
+</div>
 </section>
 <!-- {{{{ dzslides core
 #
@@ -208,21 +351,50 @@
 <!-- Default Style -->
 <style>
   * { margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  details { display: none; }
+  [role="note"] { display: none; }
   body {
     width: 800px; height: 600px;
     margin-left: -400px; margin-top: -300px;
     position: absolute; top: 50%; left: 50%;
     overflow: hidden;
+    display: none;
   }
+  .view body {
+    position: static;
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+    display: inline-block;
+    overflow: visible; overflow-x: hidden;
+    /* undo Dz.onresize */
+    transform: none !important;
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+  }
+  .view head, .view head > title { display: block }
   section {
     position: absolute;
     pointer-events: none;
     width: 100%; height: 100%;
   }
+  .view section {
+    pointer-events: auto;
+    position: static;
+    width: 800px; height: 600px;
+    margin: -150px -200px;
+    float: left;
+
+    transform: scale(.4);
+    -moz-transform: scale(.4);
+    -webkit-transform: scale(.4);
+    -o-transform: scale(.4);
+    -ms-transform: scale(.4);
+  }
+  .view section > * { pointer-events: none; }
   section[aria-selected] { pointer-events: auto; }
   html { overflow: hidden; }
-  body { display: none; }
+  html.view { overflow: visible; }
   body.loaded { display: block; }
   .incremental {visibility: hidden; }
   .incremental[active] {visibility: visible; }
@@ -234,15 +406,8 @@
     -ms-transition: width 400ms linear 0s;
     transition: width 400ms linear 0s;
   }
-  figure {
-    width: 100%;
-    height: 100%;
-  }
-  figure > * {
-    position: absolute;
-  }
-  figure > img, figure > video {
-    width: 100%; height: 100%;
+  .view #progress-bar {
+    display: none;
   }
 </style>
 
@@ -251,6 +416,7 @@
     remoteWindows: [],
     idx: -1,
     step: 0,
+    html: null,
     slides: null,
     progressBar : null,
     params: {
@@ -260,14 +426,16 @@
 
   Dz.init = function() {
     document.body.className = "loaded";
-    this.slides = $$("body > section");
+    this.slides = Array.prototype.slice.call($$("body > section"));
     this.progressBar = $("#progress-bar");
+    this.html = document.body.parentNode;
     this.setupParams();
     this.onhashchange();
     this.setupTouchEvents();
     this.onresize();
+    this.setupView();
   }
-  
+
   Dz.setupParams = function() {
     var p = window.location.search.substr(1).split('&');
     p.forEach(function(e, i, a) {
@@ -317,6 +485,10 @@
       aEvent.preventDefault();
       this.goFullscreen();
     }
+    if (aEvent.keyCode == 79) { // o
+      aEvent.preventDefault();
+      this.toggleView();
+    }
   }
 
   /* Touch Events */
@@ -350,6 +522,16 @@
     }
   }
 
+  Dz.setupView = function() {
+    document.body.addEventListener("click", function ( e ) {
+      if (!Dz.html.classList.contains("view")) return;
+      if (!e.target || e.target.nodeName != "SECTION") return;
+
+      Dz.html.classList.remove("view");
+      Dz.setCursor(Dz.slides.indexOf(e.target) + 1);
+    }, false);
+  }
+
   /* Adapt the size of the slides to the window */
 
   Dz.onresize = function() {
@@ -366,9 +548,9 @@
   }
 
 
-  Dz.getDetails = function(aIdx) {
+  Dz.getNotes = function(aIdx) {
     var s = $("section:nth-of-type(" + aIdx + ")");
-    var d = s.$("details");
+    var d = s.$("[role='note']");
     return d ? d.innerHTML : "";
   }
 
@@ -397,7 +579,7 @@
     if (argv[0] === "GET_CURSOR" && argc === 1)
       this.postMsg(win, "CURSOR", this.idx + "." + this.step);
     if (argv[0] === "GET_NOTES" && argc === 1)
-      this.postMsg(win, "NOTES", this.getDetails(this.idx));
+      this.postMsg(win, "NOTES", this.getNotes(this.idx));
   }
 
   Dz.toggleContent = function() {
@@ -481,6 +663,14 @@
     this.setCursor(lastIdx, lastStep);
   }
 
+  Dz.toggleView = function() {
+    this.html.classList.toggle("view");
+
+    if (this.html.classList.contains("view")) {
+      $("section[aria-selected]").scrollIntoView(true);
+    }
+  }
+
   Dz.setSlide = function(aIdx) {
     this.idx = aIdx;
     var old = $("section[aria-selected]");
@@ -494,6 +684,9 @@
     }
     if (next) {
       next.setAttribute("aria-selected", "true");
+      if (this.html.classList.contains("view")) {
+        next.scrollIntoView();
+      }
       var video = next.$("video");
       if (video && !!+this.params.autoplay) {
         video.play();

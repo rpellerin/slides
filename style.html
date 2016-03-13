@@ -20,6 +20,7 @@
 .w75 { width: 75%; }
 .w80 { width: 80%; }
 .w90 { width: 90%; }
+.w100 { width: 100%; }
 
 body {
   border-radius: 0; /* override */
@@ -34,14 +35,13 @@ section a {
   color: inherit;
 }
 
-h1, h2, h3 {
+h1:not(.title), h2, h3 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: normal;
   position: relative;
   z-index: 100;
   background-color: rgba(255,255,255,0.7);
-  margin-left: 0;
-  margin-right: 0;
+  margin: 10pt 0 20pt 0;
 }
 
 h1 {
@@ -78,6 +78,10 @@ section > p {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+#progress-bar {
+    display: none;
 }
 
 </style>
