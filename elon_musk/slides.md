@@ -31,7 +31,7 @@
 ## Flew to Canada in 1989, then to the US
 
 * ...
-* Stanford University (California, US): began a PhD in applied physics but dropped after 2 days
+* Stanford University (California, US): began a PhD in applied physics but dropped out after 2 days
 
 -------------------------------------------
 

@@ -166,6 +166,7 @@
   
   body {
     border-radius: 0; /* override */
+    counter-reset: page;
   }
   
   section {
@@ -226,6 +227,19 @@
       display: none;
   }
   
+  .pages {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      color: gray;
+      font-size: .8em;
+  }
+  
+  .pages::after {
+      counter-increment: page;
+      content: counter(page) "";
+  }
+  
   </style>
 </head>
 <body>
@@ -260,7 +274,7 @@
 <h2 id="flew-to-canada-in-1989-then-to-the-us-1">Flew to Canada in 1989, then to the US</h2>
 <ul>
 <li>...</li>
-<li>Stanford University (California, US): began a PhD in applied physics but dropped after 2 days</li>
+<li>Stanford University (California, US): began a PhD in applied physics but dropped out after 2 days</li>
 </ul>
 </section>
 <section id="zip2-paypal" class="slide level1">
