@@ -14,6 +14,7 @@
 
 -------------------------------------------
 
+<br />
 <img src="assets/marketshare.png" alt="Market Share" class="w90"/><br />
 <span style="font-size: .2em; color: gray">Source: http://www.statista.com/statistics/257966/best-selling-electric-cars-in-the-united-states/</span>
 
@@ -22,6 +23,14 @@
 -------------------------------------------
 
 # How it works
+### The example of Tesla's Model S
+
+* 1 battery made of thousands of lithium-ion cells
+* 1 gear
+* 290-kilowatt motor: 1 rotor, 1 stator
+* No transmission: direct drive
+
+<img src="assets/chassis.png" alt="Tesla Model S Chassis" class="w50"/>
 
 <div class="pages" />
 
