@@ -1,4 +1,4 @@
-% Will electric cars save the world?
+% Will ~~electric cars~~ Tesla save the world?
 % Romain Pellerin
 % LA15 2016-04-27
 
@@ -7,6 +7,7 @@
 * 0.1% of the 1B cars
 * **Norway**: 22.5%
 * **Tesla**, Nissan, BMW, Fiat
+* Model S safest car ever
 
 <img src="assets/models.jpg" alt="Tesla Model S" class="w50"/>
 
@@ -14,8 +15,9 @@
 
 -------------------------------------------
 
-<br />
-<img src="assets/marketshare.png" alt="Market Share" class="w90"/><br />
+## Sales (in unit) in the US in 2015
+
+<img src="assets/marketshare.png" alt="Market Share" class="w80"/><br />
 <span style="font-size: .2em; color: gray">Source: http://www.statista.com/statistics/257966/best-selling-electric-cars-in-the-united-states/</span>
 
 <div class="pages" />
@@ -23,6 +25,7 @@
 -------------------------------------------
 
 # How it works
+
 ### The example of Tesla's Model S
 
 * 1 battery made of thousands of lithium-ion cells
@@ -36,13 +39,18 @@
 
 -------------------------------------------
 
-# Differences with gas cars
+# Challenges
 
-<div class="pages" />
+- No pollution
+    - Material extraction
+    - Manufacturing
+    - Driving & Charging
+- Electricity production
+    - How? Pollution?
+    - Enough?
+- Recyclable (battery & car)
 
 -------------------------------------------
-
-# How green it is
 
 * Making the battery (mining materials)
 * Making the car
@@ -73,7 +81,24 @@
 
 -------------------------------------------
 
+# Tesla's Master Plan
+
+<div class="pages" />
+-------------------------------------------
+
+# Going further 
+
+<video autoplay loop src="assets/selfdriving.mp4" ></video>
+
+<div class="pages" />
+
+-------------------------------------------
+
 # Thank you
+
+_
+
+Q & A
 
 -------------------------------------------
 

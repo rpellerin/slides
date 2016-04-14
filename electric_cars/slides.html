@@ -1,40 +1,88 @@
 <!DOCTYPE html>
 <head>
-<meta charset="utf-8">
-  <meta name="author" content="Romain Pellerin" />
-  <title>Will electric cars save the world?</title>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Romain Pellerin">
+  <title>Will electric cars Tesla save the world?</title>
   <style type="text/css">code{white-space: pre;}</style>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
 <style>
-  html { background-color: black; }
-  body { background-color: white; border-radius: 12px}
+  html, .view body { background-color: black; counter-reset: slideidx; }
+  body, .view section { background-color: white; border-radius: 12px }
   /* A section is a slide. It's size is 800x600, and this will never change */
-  section {
-      font-family: Arial, serif;
-      font-size: 20pt;
-    }
-  address, blockquote, dl, fieldset, form, h1, h2, h3, h4, h5, h6, hr, ol, p, pre, table, ul, dl { padding: 10px 20px 10px 20px; }
-  h1, h2, h3 {
+  section, .view head > title {
+      /* The font from Google */
+      font-family: 'Oswald', arial, serif;
+      font-size: 30px;
+  }
+
+  .view section:after {
+    counter-increment: slideidx;
+    content: counter(slideidx, decimal-leading-zero);
+    position: absolute; bottom: -80px; right: 100px;
+    color: white;
+  }
+
+  .view head > title {
+    color: white;
     text-align: center;
-    margin: 10pt 10pt 20pt 10pt;
+    margin: 1em 0 1em 0;
   }
-  ul, ol {
-    margin: 10px 10px 10px 50px;
+
+  h1, h2 {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 80px;
   }
-  section.titleslide h1 { margin-top: 200px; }
-  h1.title { margin-top: 150px; }
-  h1 { font-size: 180%; }
-  h2 { font-size: 120%; }
-  h3 { font-size: 100%; }
-  q { quotes: "“" "”" "‘" "’"; }
-  blockquote { font-style: italic }
-  /* Figures are displayed full-page, with the caption on
-     top of the image/video */
+  h3 {
+    margin: 100px 0 50px 100px;
+  }
+
+  ul {
+      margin: 50px 200px;
+  }
+  li > ul {
+      margin: 15px 50px;
+  }
+
+  p {
+    margin: 75px;
+    font-size: 50px;
+  }
+
+  blockquote {
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-size: 60px;
+    padding: 50px;
+  }
+  blockquote:before {
+    content: open-quote;
+  }
+  blockquote:after {
+    content: close-quote;
+  }
+
+  /* Figures are displayed full-page, with the caption
+     on top of the image/video */
   figure {
     background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  figure > * {
+    position: absolute;
+  }
+  figure > img, figure > video {
+    width: 100%; height: 100%;
   }
   figcaption {
     margin: 70px;
+    font-size: 50px;
   }
+
   footer {
     position: absolute;
     bottom: 0;
@@ -51,10 +99,20 @@
      https://developer.mozilla.org/en/CSS/CSS_transitions
      How to use CSS3 Transitions: */
   section {
-      -moz-transition: left 400ms linear 0s;
-      -webkit-transition: left 400ms linear 0s;
-      -ms-transition: left 400ms linear 0s;
-      transition: left 400ms linear 0s;
+    -moz-transition: left 400ms linear 0s;
+    -webkit-transition: left 400ms linear 0s;
+    -ms-transition: left 400ms linear 0s;
+    transition: left 400ms linear 0s;
+  }
+  .view section {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
+  }
+
+  .view section[aria-selected] {
+    border: 5px red solid;
   }
 
   /* Before */
@@ -70,10 +128,17 @@
   .incremental > * { opacity: 1; }
 
   /* The current item */
-  .incremental > *[aria-selected] { color: red; opacity: 1; }
+  .incremental > *[aria-selected] { opacity: 1; }
 
   /* The items to-be-selected */
-  .incremental > *[aria-selected] ~ * { opacity: 0.2; }
+  .incremental > *[aria-selected] ~ * { opacity: 0; }
+
+  /* The progressbar, at the bottom of the slides, show the global
+     progress of the presentation. */
+  #progress-bar {
+    height: 2px;
+    background: #AAA;
+  }
 </style>
   <style>
   @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -120,6 +185,7 @@
     z-index: 100;
     background-color: rgba(255,255,255,0.7);
     margin: 10pt 0 20pt 0;
+    text-align: center;
   }
   
   h1 {
@@ -156,6 +222,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 50;
   }
   
   #progress-bar {
@@ -168,6 +235,7 @@
       bottom: 5px;
       color: gray;
       font-size: .8em;
+      z-index: 1000;
   }
   
   .pages::after {
@@ -179,9 +247,10 @@
 </head>
 <body>
 <section class="title">
-  <h1 class="title">Will electric cars save the world?</h1>
-  <h2 class="author">Romain Pellerin</h2>
-  <h3 class="date">LA15 2016-04-27</h3>
+  <h1 class="title">Will <del>electric cars</del> Tesla save the world?</h1>
+  <footer>
+    <span class="author">Romain Pellerin</span> · <span class="date">LA15 2016-04-27</span>
+  </footer>
 </section>
 <section id="state-of-the-market" class="slide level1">
 <h1>State of the market</h1>
@@ -189,6 +258,7 @@
 <li>0.1% of the 1B cars</li>
 <li><strong>Norway</strong>: 22.5%</li>
 <li><strong>Tesla</strong>, Nissan, BMW, Fiat</li>
+<li>Model S safest car ever</li>
 </ul>
 <p><img src="assets/models.jpg" alt="Tesla Model S" class="w50"/></p>
 <div class="pages" />
@@ -196,7 +266,8 @@
 </section>
 <section class="slide level1">
 
-<p><br /> <img src="assets/marketshare.png" alt="Market Share" class="w90"/><br /> <span style="font-size: .2em; color: gray">Source: http://www.statista.com/statistics/257966/best-selling-electric-cars-in-the-united-states/</span></p>
+<h2 id="sales-in-unit-in-the-us-in-2015">Sales (in unit) in the US in 2015</h2>
+<p><img src="assets/marketshare.png" alt="Market Share" class="w80"/><br /> <span style="font-size: .2em; color: gray">Source: http://www.statista.com/statistics/257966/best-selling-electric-cars-in-the-united-states/</span></p>
 <div class="pages" />
 
 </section>
@@ -213,13 +284,25 @@
 <div class="pages" />
 
 </section>
-<section id="differences-with-gas-cars" class="slide level1">
-<h1>Differences with gas cars</h1>
-<div class="pages" />
-
+<section id="challenges" class="slide level1">
+<h1>Challenges</h1>
+<ul>
+<li>No pollution
+<ul>
+<li>Material extraction</li>
+<li>Manufacturing</li>
+<li>Driving &amp; Charging</li>
+</ul></li>
+<li>Electricity production
+<ul>
+<li>How? Pollution?</li>
+<li>Enough?</li>
+</ul></li>
+<li>Recyclable (battery &amp; car)</li>
+</ul>
 </section>
-<section id="how-green-it-is" class="slide level1">
-<h1>How green it is</h1>
+<section class="slide level1">
+
 <ul>
 <li>Making the battery (mining materials)</li>
 <li>Making the car</li>
@@ -245,8 +328,21 @@
 <div class="pages" />
 
 </section>
+<section id="teslas-master-plan" class="slide level1">
+<h1>Tesla's Master Plan</h1>
+<div class="pages" />
+</section>
+<section id="going-further" class="slide level1">
+<h1>Going further</h1>
+<video autoplay loop src="assets/selfdriving.mp4">
+</video>
+<div class="pages" />
+
+</section>
 <section id="thank-you" class="slide level1">
 <h1>Thank you</h1>
+<p>_</p>
+<p>Q &amp; A</p>
 </section>
 <section id="credits" class="slide level1">
 <h1>Credits</h1>
@@ -275,21 +371,50 @@
 <!-- Default Style -->
 <style>
   * { margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  details { display: none; }
+  [role="note"] { display: none; }
   body {
     width: 800px; height: 600px;
     margin-left: -400px; margin-top: -300px;
     position: absolute; top: 50%; left: 50%;
     overflow: hidden;
+    display: none;
   }
+  .view body {
+    position: static;
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+    display: inline-block;
+    overflow: visible; overflow-x: hidden;
+    /* undo Dz.onresize */
+    transform: none !important;
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+  }
+  .view head, .view head > title { display: block }
   section {
     position: absolute;
     pointer-events: none;
     width: 100%; height: 100%;
   }
+  .view section {
+    pointer-events: auto;
+    position: static;
+    width: 800px; height: 600px;
+    margin: -150px -200px;
+    float: left;
+
+    transform: scale(.4);
+    -moz-transform: scale(.4);
+    -webkit-transform: scale(.4);
+    -o-transform: scale(.4);
+    -ms-transform: scale(.4);
+  }
+  .view section > * { pointer-events: none; }
   section[aria-selected] { pointer-events: auto; }
   html { overflow: hidden; }
-  body { display: none; }
+  html.view { overflow: visible; }
   body.loaded { display: block; }
   .incremental {visibility: hidden; }
   .incremental[active] {visibility: visible; }
@@ -301,15 +426,8 @@
     -ms-transition: width 400ms linear 0s;
     transition: width 400ms linear 0s;
   }
-  figure {
-    width: 100%;
-    height: 100%;
-  }
-  figure > * {
-    position: absolute;
-  }
-  figure > img, figure > video {
-    width: 100%; height: 100%;
+  .view #progress-bar {
+    display: none;
   }
 </style>
 
@@ -318,6 +436,7 @@
     remoteWindows: [],
     idx: -1,
     step: 0,
+    html: null,
     slides: null,
     progressBar : null,
     params: {
@@ -327,14 +446,16 @@
 
   Dz.init = function() {
     document.body.className = "loaded";
-    this.slides = $$("body > section");
+    this.slides = Array.prototype.slice.call($$("body > section"));
     this.progressBar = $("#progress-bar");
+    this.html = document.body.parentNode;
     this.setupParams();
     this.onhashchange();
     this.setupTouchEvents();
     this.onresize();
+    this.setupView();
   }
-  
+
   Dz.setupParams = function() {
     var p = window.location.search.substr(1).split('&');
     p.forEach(function(e, i, a) {
@@ -384,6 +505,10 @@
       aEvent.preventDefault();
       this.goFullscreen();
     }
+    if (aEvent.keyCode == 79) { // o
+      aEvent.preventDefault();
+      this.toggleView();
+    }
   }
 
   /* Touch Events */
@@ -417,6 +542,16 @@
     }
   }
 
+  Dz.setupView = function() {
+    document.body.addEventListener("click", function ( e ) {
+      if (!Dz.html.classList.contains("view")) return;
+      if (!e.target || e.target.nodeName != "SECTION") return;
+
+      Dz.html.classList.remove("view");
+      Dz.setCursor(Dz.slides.indexOf(e.target) + 1);
+    }, false);
+  }
+
   /* Adapt the size of the slides to the window */
 
   Dz.onresize = function() {
@@ -433,9 +568,9 @@
   }
 
 
-  Dz.getDetails = function(aIdx) {
+  Dz.getNotes = function(aIdx) {
     var s = $("section:nth-of-type(" + aIdx + ")");
-    var d = s.$("details");
+    var d = s.$("[role='note']");
     return d ? d.innerHTML : "";
   }
 
@@ -464,7 +599,7 @@
     if (argv[0] === "GET_CURSOR" && argc === 1)
       this.postMsg(win, "CURSOR", this.idx + "." + this.step);
     if (argv[0] === "GET_NOTES" && argc === 1)
-      this.postMsg(win, "NOTES", this.getDetails(this.idx));
+      this.postMsg(win, "NOTES", this.getNotes(this.idx));
   }
 
   Dz.toggleContent = function() {
@@ -548,6 +683,14 @@
     this.setCursor(lastIdx, lastStep);
   }
 
+  Dz.toggleView = function() {
+    this.html.classList.toggle("view");
+
+    if (this.html.classList.contains("view")) {
+      $("section[aria-selected]").scrollIntoView(true);
+    }
+  }
+
   Dz.setSlide = function(aIdx) {
     this.idx = aIdx;
     var old = $("section[aria-selected]");
@@ -561,6 +704,9 @@
     }
     if (next) {
       next.setAttribute("aria-selected", "true");
+      if (this.html.classList.contains("view")) {
+        next.scrollIntoView();
+      }
       var video = next.$("video");
       if (video && !!+this.params.autoplay) {
         video.play();
