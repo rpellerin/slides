@@ -33,7 +33,13 @@
 * 290-kilowatt motor: 1 rotor, 1 stator
 * No transmission: direct drive
 
-<img src="assets/chassis.png" alt="Tesla Model S Chassis" class="w50"/>
+-------------------------------------------
+
+# How it works
+
+### The example of Tesla's Model S
+
+<img src="assets/chassis.png" alt="Tesla Model S Chassis" class="w100"/>
 
 <div class="pages" />
 
@@ -50,7 +56,11 @@
     - Enough?
 - Recyclable (battery & car)
 
+<div class="pages" />
+
 -------------------------------------------
+
+# Possible sources of pollution
 
 * Making the battery (mining materials)
 * Making the car
@@ -64,18 +74,6 @@
 # Electricity production
 
 [link](http://www.citylab.com/weather/2015/06/where-electric-vehicles-actually-cause-more-pollution-than-gas-cars/397136/)
-
-<div class="pages" />
-
--------------------------------------------
-
-# Is it worth it?
-
-<div class="pages" />
-
--------------------------------------------
-
-# Alternatives
 
 <div class="pages" />
 
