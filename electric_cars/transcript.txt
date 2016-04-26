@@ -1,4 +1,8 @@
 Talk about electric vehicles in general and then more specifically about Tesla.
+Why Tesla? Because at the time being, they're leading the market and they the most innovative car maker. We'll see why at the end of this presentation.
+A brief recap about Tesla. Real name is Tesla Motors, it was founded in 2003 by Elon Musk, a serial entrepreneur.
+I didn't reharse that much cause you know, I wanted this presentation to seem like I'm just talking, having a conversation with you, out of the blue. Exposing a few facts, in the end, just trying to convince you and then start a debate. Then it will be your job to weight up the pros and cons of going 100% electric.
+It's going to be very dense but yet, of great interest. Let's get started.
 
 // CONTENTS
 
@@ -29,9 +33,25 @@ can either be a dual motor or a propulsion car: it's actually an option you can 
 
 pretty huge, it's a core part of the chassis, although it can be easily replaced.
 
+// CHALLENGES
+
+Erasing air pollution. A recent estimate showed that every year, air pollution kills 55,000 people, globally.
+So we want to erase that kind of pollution at all possible levels, including even the very first steps of car production.
+
+Electricity production is also a big challenge. This matters as much as the rest.
+
+It's a fact. Once you're done with all of these problems, well, it's over. You've solved the problem completely.
+
+I'll try to adress most of these problematics in the coming slides. Let us move on.
+
+// SOURCES OF PULLUTION
+
+// ELECTRICITY PRODUCTION #1
 
 
+// ELECTRICITY PRODUCTION #2
 
 
+// STILL RELUCTANT?
 
 Tax credit of a few thousand dollars.
