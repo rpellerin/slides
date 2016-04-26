@@ -2,11 +2,24 @@
 % Romain Pellerin
 % LA15 2016-04-27
 
+-------------------------------------------
+
+# Contents
+
+1. Market
+2. How it works
+3. Pollution & challenges
+4. Expanding on Tesla
+
+<div class="pages" />
+
+-------------------------------------------
+
 # State of the market
 
 * 0.1% of the 1B cars
 * **Norway**: 22.5%
-* **Tesla**, Nissan, BMW, Fiat
+* **Tesla**, Nissan, BMW, Toyota
 * Model S safest car ever
 
 <img src="assets/models.jpg" alt="Tesla Model S" class="w50"/>
@@ -30,16 +43,28 @@
 
 * 1 battery made of thousands of lithium-ion cells
 * 1 gear
-* 290-kilowatt motor: 1 rotor, 1 stator
 * No transmission: direct drive
+* 290-kilowatt motor: 1 rotor, 1 stator
+
+<div class="pages" />
 
 -------------------------------------------
 
 # How it works
 
-### The example of Tesla's Model S
+### The example of Tesla's Model S: chassis and motors
 
 <img src="assets/chassis.png" alt="Tesla Model S Chassis" class="w100"/>
+
+<div class="pages" />
+
+-------------------------------------------
+
+# How it works
+
+### The example of Tesla's Model S: chassis and battery
+
+<img src="assets/battery.jpg" alt="Tesla Model S Battery" class="w100"/>
 
 <div class="pages" />
 
@@ -105,5 +130,10 @@ Q & A
 <div style="font-size: .5em;">
 
 * [http://www.plugincars.com/tesla-model-s](http://www.plugincars.com/tesla-model-s)
+
+## Tesla Safest Car
+
+- [http://www.consumerreports.org/cro/news/2013/05/video-the-tesla-model-s-is-our-top-scoring-car/index.htm](http://www.consumerreports.org/cro/news/2013/05/video-the-tesla-model-s-is-our-top-scoring-car/index.htm)
+- [https://www.teslamotors.com/blog/tesla-model-s-achieves-best-safety-rating-any-car-ever-tested](https://www.teslamotors.com/blog/tesla-model-s-achieves-best-safety-rating-any-car-ever-tested)
 
 </div>

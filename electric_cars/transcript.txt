@@ -1,0 +1,37 @@
+Talk about electric vehicles in general and then more specifically about Tesla.
+
+// CONTENTS
+
+// STATE OF THE MARKET
+
+Just to give you an example, in France, electric vehicles represent less than 2% of the cars.
+
+Tesla was awarded a 5-star safety rating by the National Highway Traffic in 2013.
+
+The consumer reports rated the car 99 out of 100, that same year, which makes the Model S the best car ever created according to them.
+
+// SALES
+
+Bar chart is pretty self-explanatory.
+
+// HOW IT WORKS
+
+- No fuel tank, instead one huge battery placed right on the chassis.
+- 1 gear, no shifting, just like a karting. In addition, there's no transmission, it's a direct drive.
+- The 290 kilowatt motor allows you to regerate power when braking. As you might have guessed, there's also no tail pipe, it's all electric.
+- It's a very powerful motor capable of develiring insane thrust. The car goes up to 60 miles per hour in less than 3 seconds, depending on the motor you chose. The maximum speed is approximately 130 miles per hour. The capabilities of the car, in terms of acceleration, exceed those of a Ferrari or a Lamborghini.
+
+// motors
+
+can either be a dual motor or a propulsion car: it's actually an option you can take when purchasing you car
+
+// battery
+
+pretty huge, it's a core part of the chassis, although it can be easily replaced.
+
+
+
+
+
+
+Tax credit of a few thousand dollars.
