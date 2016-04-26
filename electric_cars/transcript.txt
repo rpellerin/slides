@@ -46,8 +46,11 @@ I'll try to adress most of these problematics in the coming slides. Let us move 
 
 // SOURCES OF PULLUTION
 
+No rare earth element is used to produce a Model S. Therefore, this means that the company avoids here a lot of pollution. Indeed, mining and refining rare earth elements often causes serious environmental consequences if not properly managed. As I'm not an expert you can look it up on Google and find more about this. But still, it's a good thing to point out.
+
 // ELECTRICITY PRODUCTION #1
 
+A 2012 report was concluded, saying "Electric vehicles charged on the power grid have lower global warming emissions than the average gasoline-based vehicle sold today."
 
 // ELECTRICITY PRODUCTION #2
 

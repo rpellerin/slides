@@ -89,10 +89,17 @@
 
 * Making the battery (mining materials)
 * Making the car
-* Electricity production
+* Using the car 
 * Recycling the car and **the battery**
 
 <div class="pages" />
+
+-------------------------------------------
+
+# CO2 emissions
+
+<img src="assets/co2.jpg" alt="CO2 emissions" class="w70"/><br />
+<span style="font-size: .2em; color: gray">Source: [https://simonwild.me/2013/03/05/how-to-be-green-lifecycle-impact-hybrids-are-cheaper/](https://simonwild.me/2013/03/05/how-to-be-green-lifecycle-impact-hybrids-are-cheaper/)</span>
 
 -------------------------------------------
 
@@ -104,7 +111,9 @@
 - Wind power
 - etc.
 
-<span style="font-size: .2em; color: gray">Source: [http://blog.solarcity.com/solarcity-customers-8-gigawatt-hours-teslas](http://blog.solarcity.com/solarcity-customers-8-gigawatt-hours-teslas)</span>
+
+
+<div class="pages" />
 
 -------------------------------------------
 
@@ -120,7 +129,7 @@
 
 -------------------------------------------
 
-# Tesla's Master Plan
+![](assets/plan.png)
 
 <div class="pages" />
 -------------------------------------------
@@ -135,7 +144,13 @@
 
 # Still reluctant?
 
-- **Range anxiety?** *Free electricity at charging stations*
+- Auto pilot: safety++
+- Range anxiety? **Free electricity at charging stations**
+- No foreign oil dependency
+- Quieter than engines
+- Tax credits (up to $7,500)
+
+<div class="pages" />
 
 -------------------------------------------
 
@@ -144,6 +159,8 @@
 _
 
 Q & A
+
+<div class="pages" />
 
 -------------------------------------------
 
@@ -168,13 +185,22 @@ Q & A
 
 <div style="font-size: .5em;">
 
-### Air pollution
+### Pollution
 
 - [http://www.livescience.com/52189-air-pollution-kills-millions-people-yearly.html](http://www.livescience.com/52189-air-pollution-kills-millions-people-yearly.html)
+- [https://forums.teslamotors.com/forum/forums/no-rare-earth-metals-model-s](https://forums.teslamotors.com/forum/forums/no-rare-earth-metals-model-s)
+- [The 2012 report](http://www.ucsusa.org/sites/default/files/legacy/assets/documents/clean_vehicles/electric-car-global-warming-emissions-report.pdf)
+- [SolarCity about production](https://simonwild.me/2013/03/05/how-to-be-green-lifecycle-impact-hybrids-are-cheaper/)
+
+### Tesla's Master Plan
+
+- [http://www.filetrail.com/blog/2016/4/12/filetrails-master-plan-its-been-a-secret-all-along](http://www.filetrail.com/blog/2016/4/12/filetrails-master-plan-its-been-a-secret-all-along)
+- [https://www.teslamotors.com/blog/secret-tesla-motors-master-plan-just-between-you-and-me](https://www.teslamotors.com/blog/secret-tesla-motors-master-plan-just-between-you-and-me)
 
 ### Still reluctant?
 
 - [https://www.quora.com/How-can-Tesla-afford-to-offer-drivers-free-charging-for-life](https://www.quora.com/How-can-Tesla-afford-to-offer-drivers-free-charging-for-life)
+- [http://www.engadget.com/2014/08/04/electric-cars-explainer/](http://www.engadget.com/2014/08/04/electric-cars-explainer/)
 
 
 </div>
