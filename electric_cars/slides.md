@@ -4,6 +4,11 @@
 
 -------------------------------------------
 
+![](assets/plan.png)
+
+<div class="pages" />
+-------------------------------------------
+
 # Contents
 
 1. Market
@@ -73,7 +78,7 @@
 # Challenges
 
 - No pollution
-    - Material extraction
+    - Material extraction (mining)
     - Manufacturing
     - Driving & Charging
 - Electricity production
@@ -85,21 +90,12 @@
 
 -------------------------------------------
 
-# Possible sources of pollution
-
-* Making the battery (mining materials)
-* Making the car
-* Using the car 
-* Recycling the car and **the battery**
-
-<div class="pages" />
-
--------------------------------------------
-
 # CO2 emissions
 
 <img src="assets/co2.jpg" alt="CO2 emissions" class="w70"/><br />
 <span style="font-size: .2em; color: gray">Source: [https://simonwild.me/2013/03/05/how-to-be-green-lifecycle-impact-hybrids-are-cheaper/](https://simonwild.me/2013/03/05/how-to-be-green-lifecycle-impact-hybrids-are-cheaper/)</span>
+
+<div class="pages" />
 
 -------------------------------------------
 
@@ -107,7 +103,7 @@
 
 ## Enough and green? **Solved.**
 
-- Solar Panels
+- Solar panels
 - Wind power
 - etc.
 
@@ -122,16 +118,11 @@
 ## BUT 
 
 <img src="assets/elec_pollution.jpg" alt="Pollution" class="w100"/>
-<span style="font-size: .2em; color: gray; display: block">Estimated damages for gas (left) and electric (right) cars by US country in 2015.</span>
+**<span style="font-size: .2em; color: gray; display: block">Estimated damages for gas (left) and electric (right) cars by US country in 2015.</span>**
 <span style="font-size: .2em; color: gray">Source: [http://www.citylab.com/weather/2015/06/where-electric-vehicles-actually-cause-more-pollution-than-gas-cars/397136/](http://www.citylab.com/weather/2015/06/where-electric-vehicles-actually-cause-more-pollution-than-gas-cars/397136/)</span>
 
 <div class="pages" />
 
--------------------------------------------
-
-![](assets/plan.png)
-
-<div class="pages" />
 -------------------------------------------
 
 # Going further 
@@ -196,6 +187,14 @@ Q & A
 
 - [http://www.filetrail.com/blog/2016/4/12/filetrails-master-plan-its-been-a-secret-all-along](http://www.filetrail.com/blog/2016/4/12/filetrails-master-plan-its-been-a-secret-all-along)
 - [https://www.teslamotors.com/blog/secret-tesla-motors-master-plan-just-between-you-and-me](https://www.teslamotors.com/blog/secret-tesla-motors-master-plan-just-between-you-and-me)
+
+</div>
+
+-------------------------------------------
+
+# Credits
+
+<div style="font-size: .5em;">
 
 ### Still reluctant?
 
