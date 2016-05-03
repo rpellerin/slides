@@ -34,17 +34,14 @@ h1.title {
 
 -------------------------------------------
 
-# Branches 
-
-<video autoplay loop src="assets/branches2.webm" ></video>
-
--------------------------------------------
-
 <img src="assets/workflow.png" alt="Workflow" class="w55"/>
 
 <style>
+div.sourceCode {
+    background-color: rgba(238,238,238,0.5);    
+}
 section > p:first-child {
-    margin: 0;    
+    margin: 10px; 
 }
 .w55 {
     width: 55%;    
@@ -53,6 +50,33 @@ section > p:first-child {
 
 -------------------------------------------
 
+# Branches
+
+<video autoplay loop src="assets/create_b.mp4" ></video>
+
+## Create locally and remotely
+
+```bash
+git checkout -b <new-branch>
+
+git push origin <branch>:<branch>
+```
+
+-------------------------------------------
+
+# Branches
+
+<video autoplay loop src="assets/branches.webm" ></video>
+
+## Delete locally and remotely
+
+```bash
+git branch -d <branch>
+
+git push origin --delete <branch>
+```
+
+-------------------------------------------
 # Thanks
 
 <br />
@@ -71,6 +95,10 @@ section > p:first-child {
 
 # Credits
 
-git de france
-http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery
-http://www.gifbin.com/983296
+<div style="font-size: .6em">
+
+- Gîte de France
+- [http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery](http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery)
+- [http://www.gifbin.com/983296](http://www.gifbin.com/983296)
+
+</div>
