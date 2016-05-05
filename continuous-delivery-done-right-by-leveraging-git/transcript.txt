@@ -4,6 +4,8 @@ prononciation, histoire de git (linus, versioning), plateformes (github, gitlab,
 bref rappel : working directory, index, repo (local & distant), branches (sera détaillé plus tard)
 
 continuous delivery vs continuous integration
+http://scalarsoftware.com/assets/images/cdstoryline.png
+http://stackoverflow.com/questions/28608015/continuous-integration-vs-continuous-delivery-vs-continuous-deployment
 
 branches: pointer, comme les tags, HEAD
 interet: separer les périodes de développment, le travail de travail pour:

@@ -24,13 +24,29 @@ h1.title {
 
 -------------------------------------------
 
+# Continuous
+
+## Integration
+## **Delivery**
+## Deployment
+
+![](assets/continuous.gif)
+
+-------------------------------------------
+
 <img src="assets/gite_fr.png" alt="Gite de France" class="w70"/>
 
 -------------------------------------------
 
-# Continuous Delivery
+# Reminder
 
-![](assets/continuous.gif)
+<img src="assets/commits.png" alt="Commits" class="w90"/>
+
+-------------------------------------------
+
+# Branches and references 
+
+<video autoplay loop src="assets/branches.webm" ></video>
 
 -------------------------------------------
 
@@ -38,7 +54,7 @@ h1.title {
 
 <style>
 div.sourceCode {
-    background-color: rgba(238,238,238,0.5);    
+    /*background-color: rgba(238,238,238,0.5);*/
 }
 section > p:first-child {
     margin: 10px; 
@@ -52,8 +68,6 @@ section > p:first-child {
 
 # Branches
 
-<video autoplay loop src="assets/create_b.mp4" ></video>
-
 ## Create locally and remotely
 
 ```bash
@@ -66,8 +80,6 @@ git push origin <branch>:<branch>
 
 # Branches
 
-<video autoplay loop src="assets/branches.webm" ></video>
-
 ## Delete locally and remotely
 
 ```bash
@@ -77,6 +89,37 @@ git push origin --delete <branch>
 ```
 
 -------------------------------------------
+
+# Online platforms
+
+## Github
+
+## Gitlab
+
+-------------------------------------------
+
+# Pull requests
+
+-------------------------------------------
+
+# Rebase
+
+-------------------------------------------
+
+# Merge
+
+## Fast-forward vs not
+
+-------------------------------------------
+
+# Reset
+
+-------------------------------------------
+
+# Bisect
+
+-------------------------------------------
+
 # Thanks
 
 <br />
@@ -98,6 +141,7 @@ git push origin --delete <branch>
 <div style="font-size: .6em">
 
 - Gîte de France
+- http://codingdomain.com/git/partial-commits/
 - [http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery](http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery)
 - [http://www.gifbin.com/983296](http://www.gifbin.com/983296)
 

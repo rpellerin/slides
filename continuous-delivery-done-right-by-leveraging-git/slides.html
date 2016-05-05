@@ -237,7 +237,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     font-size: 1.2em;
   }
   
-  figure > img {
+  figure, figure > img {
     height: 100%; /* originally auto */
   }
   
@@ -251,7 +251,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     text-align: center;
   }
   
-  .slide h1+figure img, .slide video {
+  .slide figure, .slide figure img, .slide video {
     display: block;
     width: 100%;
     height: 100%;
@@ -260,11 +260,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 50;
-  }
-  
-  .slide video {
-      z-index: -1;
+    z-index: -1;
   }
   
   #progress-bar {
@@ -313,22 +309,34 @@ h1.title {
 }
 </style>
 </section>
-<section class="slide level1">
-
-<p><img src="assets/gite_fr.png" alt="Gite de France" class="w70"/></p>
-</section>
-<section id="continuous-delivery" class="slide level1">
-<h1>Continuous Delivery</h1>
+<section id="continuous" class="slide level1">
+<h1>Continuous</h1>
+<h2 id="integration">Integration</h2>
+<h2 id="delivery"><strong>Delivery</strong></h2>
+<h2 id="deployment">Deployment</h2>
 <figure>
 <img src="assets/continuous.gif" />
 </figure>
 </section>
 <section class="slide level1">
 
+<p><img src="assets/gite_fr.png" alt="Gite de France" class="w70"/></p>
+</section>
+<section id="reminder" class="slide level1">
+<h1>Reminder</h1>
+<p><img src="assets/commits.png" alt="Commits" class="w90"/></p>
+</section>
+<section id="branches-and-references" class="slide level1">
+<h1>Branches and references</h1>
+<video autoplay loop src="assets/branches.webm">
+</video>
+</section>
+<section class="slide level1">
+
 <p><img src="assets/workflow.png" alt="Workflow" class="w55"/></p>
 <style>
 div.sourceCode {
-    background-color: rgba(238,238,238,0.5);    
+    /*background-color: rgba(238,238,238,0.5);*/
 }
 section > p:first-child {
     margin: 10px; 
@@ -340,8 +348,6 @@ section > p:first-child {
 </section>
 <section id="branches" class="slide level1">
 <h1>Branches</h1>
-<video autoplay loop src="assets/create_b.mp4">
-</video>
 <h2 id="create-locally-and-remotely">Create locally and remotely</h2>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> checkout -b <span class="kw">&lt;</span>new-branch<span class="kw">&gt;</span>
 
@@ -349,12 +355,31 @@ section > p:first-child {
 </section>
 <section id="branches-1" class="slide level1">
 <h1>Branches</h1>
-<video autoplay loop src="assets/branches.webm">
-</video>
 <h2 id="delete-locally-and-remotely">Delete locally and remotely</h2>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> branch -d <span class="kw">&lt;</span>branch<span class="kw">&gt;</span>
 
 <span class="kw">git</span> push origin --delete <span class="kw">&lt;</span>branch<span class="kw">&gt;</span></code></pre></div>
+</section>
+<section id="online-platforms" class="slide level1">
+<h1>Online platforms</h1>
+<h2 id="github">Github</h2>
+<h2 id="gitlab">Gitlab</h2>
+</section>
+<section id="pull-requests" class="slide level1">
+<h1>Pull requests</h1>
+</section>
+<section id="rebase" class="slide level1">
+<h1>Rebase</h1>
+</section>
+<section id="merge" class="slide level1">
+<h1>Merge</h1>
+<h2 id="fast-forward-vs-not">Fast-forward vs not</h2>
+</section>
+<section id="reset" class="slide level1">
+<h1>Reset</h1>
+</section>
+<section id="bisect" class="slide level1">
+<h1>Bisect</h1>
 </section>
 <section id="thanks" class="slide level1">
 <h1>Thanks</h1>
@@ -371,6 +396,7 @@ section > p:first-child {
 <div style="font-size: .6em">
 <ul>
 <li>Gîte de France</li>
+<li>http://codingdomain.com/git/partial-commits/</li>
 <li><a href="http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery" class="uri">http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery</a></li>
 <li><a href="http://www.gifbin.com/983296" class="uri">http://www.gifbin.com/983296</a></li>
 </ul>
