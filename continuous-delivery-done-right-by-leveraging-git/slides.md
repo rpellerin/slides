@@ -38,6 +38,10 @@ h1.title {
 
 -------------------------------------------
 
+<img src="assets/xkcd.png" alt="XKCD" class="w50"/>
+
+-------------------------------------------
+
 # Reminder
 
 <img src="assets/commits.png" alt="Commits" class="w90"/>
@@ -141,6 +145,7 @@ git push origin --delete <branch>
 <div style="font-size: .6em">
 
 - Gîte de France
+- http://xkcd.com/1597/
 - http://codingdomain.com/git/partial-commits/
 - [http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery](http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery)
 - [http://www.gifbin.com/983296](http://www.gifbin.com/983296)
