@@ -38,6 +38,10 @@ h1.title {
 
 -------------------------------------------
 
+![](assets/calm.png)
+
+-------------------------------------------
+
 <img src="assets/xkcd.png" alt="XKCD" class="w50"/>
 
 -------------------------------------------
@@ -45,6 +49,16 @@ h1.title {
 # Reminder
 
 <img src="assets/commits.png" alt="Commits" class="w90"/>
+
+-------------------------------------------
+
+# ID =
+
+- Content +
+- Author +
+- Date +
+- Log message +
+- Previous commit
 
 -------------------------------------------
 
@@ -100,6 +114,8 @@ git push origin --delete <branch>
 
 ## Gitlab
 
+## Travis-ci
+
 -------------------------------------------
 
 # Pull requests
@@ -147,6 +163,7 @@ git push origin --delete <branch>
 - Gîte de France
 - http://xkcd.com/1597/
 - http://codingdomain.com/git/partial-commits/
+- http://www.robertcina.com/2014/01/23/understanding-git-with-graph-theory/
 - [http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery](http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery)
 - [http://www.gifbin.com/983296](http://www.gifbin.com/983296)
 
