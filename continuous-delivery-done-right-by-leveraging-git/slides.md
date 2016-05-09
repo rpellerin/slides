@@ -4,16 +4,6 @@
 
 -------------------------------------------
 
-<br />
-
-<span style="font-size: 6em; font-weight: bold; color: white;">
-GIT
-</span>
-
-![](assets/mind.gif)
-
--------------------------------------------
-
 # I'm ONLINE
 
 ## @romainpellerin 
@@ -30,6 +20,20 @@ h1.title {
     font-size: .8em;    
 }
 </style>
+
+-------------------------------------------
+
+<br />
+
+<span style="font-size: 6em; font-weight: bold; color: white;">
+GIT
+</span>
+
+![](assets/mind.gif)
+
+<div class="notes">
+test
+</div>
 
 -------------------------------------------
 
