@@ -295,11 +295,19 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     <span class="author">Romain Pellerin</span> · <span class="date">HumanTalks Compiègne 2016-05-10</span>
   </footer>
 </section>
-<section id="hello-world" class="slide level1">
-<h1>Hello, world!</h1>
-<h2 id="gi04-sri-utc">GI04 SRI, UTC</h2>
-<h2 id="section">_</h2>
+<section class="slide level1">
+
+<p><br /></p>
+<p><span style="font-size: 6em; font-weight: bold; color: white;"> GIT </span></p>
+<figure>
+<img src="assets/mind.gif" />
+</figure>
+</section>
+<section id="im-online" class="slide level1">
+<h1>I'm ONLINE</h1>
+<h2 id="romainpellerin"><span class="citation" data-cites="romainpellerin">@romainpellerin</span></h2>
 <h2 id="romainpellerin.eu"><a href="http://romainpellerin.eu">romainpellerin.eu</a></h2>
+<h3 id="utc-gi04-sri">UTC, GI04 SRI</h3>
 <style>
 h1.title {
     font-size: 2.5em;    
@@ -312,7 +320,7 @@ h1.title {
 <section id="continuous" class="slide level1">
 <h1>Continuous</h1>
 <h2 id="integration">Integration</h2>
-<h2 id="delivery"><strong>Delivery</strong></h2>
+<h2 id="delivery">Delivery</h2>
 <h2 id="deployment">Deployment</h2>
 <figure>
 <img src="assets/continuous.gif" />
@@ -324,6 +332,11 @@ h1.title {
 </section>
 <section class="slide level1">
 
+<p><br /></p>
+<p><span style="font-size: 3em; font-weight: bold; color: red;"> GIT != Github </span></p>
+</section>
+<section class="slide level1">
+
 <figure>
 <img src="assets/calm.png" />
 </figure>
@@ -331,6 +344,12 @@ h1.title {
 <section class="slide level1">
 
 <p><img src="assets/xkcd.png" alt="XKCD" class="w50"/></p>
+</section>
+<section id="git" class="slide level1">
+<h1>GIT =</h1>
+<h2 id="directed">Directed</h2>
+<h2 id="acyclic">Acyclic</h2>
+<h2 id="graph">Graph</h2>
 </section>
 <section id="reminder" class="slide level1">
 <h1>Reminder</h1>
@@ -388,40 +407,55 @@ section > p:first-child {
 </section>
 <section id="pull-requests" class="slide level1">
 <h1>Pull requests</h1>
+<ul>
+<li>Rebase
+<ul>
+<li><code>git rebase origin/develop</code></li>
+</ul></li>
+<li>Merge
+<ul>
+<li><code>git merge origin/feature-x</code>
+<ul>
+<li><code>--no-ff</code></li>
+<li><code>--ff-only</code></li>
+</ul></li>
+</ul></li>
+<li>Reset
+<ul>
+<li><code>git reset --hard origin/xyz</code></li>
+</ul></li>
+</ul>
 </section>
-<section id="rebase" class="slide level1">
-<h1>Rebase</h1>
-</section>
-<section id="merge" class="slide level1">
-<h1>Merge</h1>
-<h2 id="fast-forward-vs-not">Fast-forward vs not</h2>
-</section>
-<section id="reset" class="slide level1">
-<h1>Reset</h1>
-</section>
-<section id="bisect" class="slide level1">
-<h1>Bisect</h1>
+<section id="commands" class="slide level1">
+<h1>Commands</h1>
+<ul>
+<li>bisect</li>
+<li>revert</li>
+<li>cherry-pick</li>
+</ul>
 </section>
 <section id="thanks" class="slide level1">
 <h1>Thanks</h1>
-<p><br /></p>
+<p><img src="assets/uni.gif" alt="Workflow" class="w20"/></p>
 <div style="color: gray">
 <h3 id="further-reading">Further reading:</h3>
 <h3 id="blog.romainpellerin.eucontinuous-integration.html"><a href="http://blog.romainpellerin.eu/continuous-integration.html">blog.romainpellerin.eu/continuous-integration.html</a></h3>
+<h3 id="blog.romainpellerin.eugit-upgrade-yourself.html"><a href="http://blog.romainpellerin.eu/git-upgrade-yourself.html">blog.romainpellerin.eu/git-upgrade-yourself.html</a></h3>
 </div>
 <p><br /><br /><br /><br /><br /><br /></p>
 <!--<span style="font-size: .7em; color: gray">Image credit : <a style="color: inherit" target="_blank" href="http://nvie.com/posts/a-successful-git-branching-model/">Vincent Driessen</a> & <a style="color: inherit" target="_blank" href="http://blog.osteele.com/posts/2008/05/my-git-workflow/">Oliver Steele</a></span>-->
 </section>
-<section id="credits" class="slide level1">
-<h1>Credits</h1>
+<section id="imagevideo-credits" class="slide level1">
+<h1>Image/Video Credits</h1>
 <div style="font-size: .6em">
 <ul>
-<li>Gîte de France</li>
-<li>http://xkcd.com/1597/</li>
-<li>http://codingdomain.com/git/partial-commits/</li>
-<li>http://www.robertcina.com/2014/01/23/understanding-git-with-graph-theory/</li>
+<li><a href="http://imgur.com/DWrI2JY" class="uri">http://imgur.com/DWrI2JY</a></li>
 <li><a href="http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery" class="uri">http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery</a></li>
+<li>Logo &quot;Gîte de France&quot;</li>
+<li><a href="http://xkcd.com/1597/" class="uri">http://xkcd.com/1597/</a></li>
+<li><a href="http://codingdomain.com/git/partial-commits/" class="uri">http://codingdomain.com/git/partial-commits/</a></li>
 <li><a href="http://www.gifbin.com/983296" class="uri">http://www.gifbin.com/983296</a></li>
+<li><a href="http://nvie.com/posts/a-successful-git-branching-model/" class="uri">http://nvie.com/posts/a-successful-git-branching-model/</a></li>
 </ul>
 </div>
 </section>

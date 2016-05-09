@@ -4,14 +4,23 @@
 
 -------------------------------------------
 
-# Hello, world!
+<br />
 
-## GI04 SRI, UTC
+<span style="font-size: 6em; font-weight: bold; color: white;">
+GIT
+</span>
 
-## _ 
+![](assets/mind.gif)
+
+-------------------------------------------
+
+# I'm ONLINE
+
+## @romainpellerin 
 
 ## [romainpellerin.eu](http://romainpellerin.eu)
 
+### UTC, GI04 SRI
 
 <style>
 h1.title {
@@ -27,7 +36,7 @@ h1.title {
 # Continuous
 
 ## Integration
-## **Delivery**
+## Delivery
 ## Deployment
 
 ![](assets/continuous.gif)
@@ -38,11 +47,30 @@ h1.title {
 
 -------------------------------------------
 
+<br />
+
+<span style="font-size: 3em; font-weight: bold; color: red;">
+GIT != Github
+</span>
+
+
+-------------------------------------------
+
 ![](assets/calm.png)
 
 -------------------------------------------
 
 <img src="assets/xkcd.png" alt="XKCD" class="w50"/>
+
+-------------------------------------------
+
+# GIT =
+
+## Directed
+
+## Acyclic
+
+## Graph
 
 -------------------------------------------
 
@@ -120,34 +148,34 @@ git push origin --delete <branch>
 
 # Pull requests
 
--------------------------------------------
-
-# Rebase
-
--------------------------------------------
-
-# Merge
-
-## Fast-forward vs not
-
--------------------------------------------
-
-# Reset
+- Rebase
+    - `git rebase origin/develop`
+- Merge
+    - `git merge origin/feature-x`
+        - `--no-ff`
+        - `--ff-only`
+- Reset
+    - `git reset --hard origin/xyz`
 
 -------------------------------------------
 
-# Bisect
+# Commands
+
+- bisect
+- revert
+- cherry-pick
 
 -------------------------------------------
 
 # Thanks
 
-<br />
+<img src="assets/uni.gif" alt="Workflow" class="w20"/>
 
 <div style="color: gray">
 
 ### Further reading:
 ### [blog.romainpellerin.eu/continuous-integration.html](http://blog.romainpellerin.eu/continuous-integration.html)
+### [blog.romainpellerin.eu/git-upgrade-yourself.html](http://blog.romainpellerin.eu/git-upgrade-yourself.html)
 
 </div>
 <br /><br /><br /><br /><br /><br />
@@ -156,15 +184,17 @@ git push origin --delete <branch>
 
 -------------------------------------------
 
-# Credits
+# Image/Video Credits
 
 <div style="font-size: .6em">
 
-- Gîte de France
-- http://xkcd.com/1597/
-- http://codingdomain.com/git/partial-commits/
-- http://www.robertcina.com/2014/01/23/understanding-git-with-graph-theory/
+- [http://imgur.com/DWrI2JY](http://imgur.com/DWrI2JY)
 - [http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery](http://devopsreactions.tumblr.com/post/110800328581/continuous-delivery)
+- Logo "Gîte de France"
+- [http://xkcd.com/1597/](http://xkcd.com/1597/)
+- [http://codingdomain.com/git/partial-commits/](http://codingdomain.com/git/partial-commits/
+)
 - [http://www.gifbin.com/983296](http://www.gifbin.com/983296)
+- [http://nvie.com/posts/a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/)
 
 </div>
