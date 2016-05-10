@@ -1,4 +1,4 @@
-% Continuous Delivery done right by leveraging Git 
+% Continuous ~~Delivery~~ Integration done right by leveraging Git 
 % Romain Pellerin
 % HumanTalks Compiègne 2016-05-10
 
@@ -32,7 +32,7 @@ GIT
 ![](assets/mind.gif)
 
 <div class="notes">
-test
+On va plutot parler principalement de Git au lieu de continuous delivery.
 </div>
 
 -------------------------------------------
@@ -45,9 +45,31 @@ test
 
 ![](assets/continuous.gif)
 
+<div class="notes">
+FAIRE DESSIN
+</div>
+
+-------------------------------------------
+
+# Online platforms
+
+## Github
+
+## Gitlab
+
+## Travis-ci
+
+<div class="notes">
+FAIRE DESSIN
+</div>
+
 -------------------------------------------
 
 <img src="assets/gite_fr.png" alt="Gite de France" class="w70"/>
+
+<div class="notes">
+Prononciation
+</div>
 
 -------------------------------------------
 
@@ -57,14 +79,30 @@ test
 GIT != Github
 </span>
 
+<div class="notes">
+- Git système de versionning (logiciel)
+- Github/Gitlab : plateforme web de services, en fait des server qui host des repo git distant + features autour
+- On peut utiliser Git sans github. un peu installer un repo git sur son pc et donner l'accès à d'autres gens
+</div>
 
 -------------------------------------------
 
 ![](assets/calm.png)
 
+<div class="notes">
+Utilisez la ligne de commande (donc Linux) et pas d'outils graphiques (celui proposé par Github par ex)
+</div>
+
 -------------------------------------------
 
 <img src="assets/xkcd.png" alt="XKCD" class="w50"/>
+
+<div class="notes">
+- C'est quoi Git ? Inventé par Linus Torvalds, le créateur de Linux, il y a dix ans.
+- Version control system
+- Remplace SVN
+- Largement adopté
+</div>
 
 -------------------------------------------
 
@@ -76,11 +114,21 @@ GIT != Github
 
 ## Graph
 
+<div class="notes">
+Fonctionne sur le principe d'un graphe orienté acyclique
+</div>
+
 -------------------------------------------
 
 # Reminder
 
 <img src="assets/commits.png" alt="Commits" class="w90"/>
+
+<div class="notes">
+- Commits = snapshot
+- Add : crée un hash de tous les fichiers
+- Commit : crée l'identifiant qui correspond au snapshot et à l'ensemble de ces hash
+</div>
 
 -------------------------------------------
 
@@ -92,11 +140,23 @@ GIT != Github
 - Log message +
 - Previous commit
 
+<div class="notes">
+ID unique
+</div>
+
 -------------------------------------------
 
-# Branches and references 
+# Branches
 
 <video autoplay loop src="assets/branches.webm" ></video>
+
+<div class="notes">
+- Branches = très simple avec Git, unlike SVN
+- Branches = étiquettes vers un commit
+- HEAD, tags = pareil
+- Tracking branches are read only
+- On peut revenir à n'importe quel commit ou en annuler comme on veut
+</div>
 
 -------------------------------------------
 
@@ -114,60 +174,39 @@ section > p:first-child {
 }
 </style>
 
--------------------------------------------
-
-# Branches
-
-## Create locally and remotely
-
-```bash
-git checkout -b <new-branch>
-
-git push origin <branch>:<branch>
-```
-
--------------------------------------------
-
-# Branches
-
-## Delete locally and remotely
-
-```bash
-git branch -d <branch>
-
-git push origin --delete <branch>
-```
-
--------------------------------------------
-
-# Online platforms
-
-## Github
-
-## Gitlab
-
-## Travis-ci
+<div class="notes">
+Workflow que j'ai adopté. Il en existe d'autre. Celui-ci est répandu. A vous de choisir.
+</div>
 
 -------------------------------------------
 
 # Pull requests
 
-- Rebase
-    - `git rebase origin/develop`
-- Merge
+- `merge`
     - `git merge origin/feature-x`
         - `--no-ff`
         - `--ff-only`
-- Reset
+- `rebase`
+    - `git rebase origin/develop`
+- `reset`
     - `git reset --hard origin/xyz`
+
+<div class="notes">
+
+</div>
 
 -------------------------------------------
 
 # Commands
 
-- bisect
-- revert
-- cherry-pick
+- `pull` (`fetch` + `merge`)
+- `bisect`
+- `revert`
+- `cherry-pick`
+
+<div class="notes">
+
+</div>
 
 -------------------------------------------
 

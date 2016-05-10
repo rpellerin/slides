@@ -3,45 +3,8 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Romain Pellerin">
-  <title>Continuous Delivery done right by leveraging Git</title>
+  <title>Continuous Delivery Integration done right by leveraging Git</title>
   <style type="text/css">code{white-space: pre;}</style>
-  <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-  </style>
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 
 <style>
@@ -290,7 +253,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </head>
 <body>
 <section class="title">
-  <h1 class="title">Continuous Delivery done right by leveraging Git</h1>
+  <h1 class="title">Continuous <del>Delivery</del> Integration done right by leveraging Git</h1>
   <footer>
     <span class="author">Romain Pellerin</span> · <span class="date">HumanTalks Compiègne 2016-05-10</span>
   </footer>
@@ -317,7 +280,7 @@ h1.title {
 <img src="assets/mind.gif" />
 </figure>
 <div class="notes" role="note">
-<p>test</p>
+<p>On va plutot parler principalement de Git au lieu de continuous delivery.</p>
 </div>
 </section>
 <section id="continuous" class="slide level1">
@@ -328,35 +291,78 @@ h1.title {
 <figure>
 <img src="assets/continuous.gif" />
 </figure>
+<div class="notes" role="note">
+<p>FAIRE DESSIN</p>
+</div>
+</section>
+<section id="online-platforms" class="slide level1">
+<h1>Online platforms</h1>
+<h2 id="github">Github</h2>
+<h2 id="gitlab">Gitlab</h2>
+<h2 id="travis-ci">Travis-ci</h2>
+<div class="notes" role="note">
+<p>FAIRE DESSIN</p>
+</div>
 </section>
 <section class="slide level1">
 
 <p><img src="assets/gite_fr.png" alt="Gite de France" class="w70"/></p>
+<div class="notes" role="note">
+<p>Prononciation</p>
+</div>
 </section>
 <section class="slide level1">
 
 <p><br /></p>
 <p><span style="font-size: 3em; font-weight: bold; color: red;"> GIT != Github </span></p>
+<div class="notes" role="note">
+<ul>
+<li>Git système de versionning (logiciel)</li>
+<li>Github/Gitlab : plateforme web de services, en fait des server qui host des repo git distant + features autour</li>
+<li>On peut utiliser Git sans github. un peu installer un repo git sur son pc et donner l'accès à d'autres gens</li>
+</ul>
+</div>
 </section>
 <section class="slide level1">
 
 <figure>
 <img src="assets/calm.png" />
 </figure>
+<div class="notes" role="note">
+<p>Utilisez la ligne de commande (donc Linux) et pas d'outils graphiques (celui proposé par Github par ex)</p>
+</div>
 </section>
 <section class="slide level1">
 
 <p><img src="assets/xkcd.png" alt="XKCD" class="w50"/></p>
+<div class="notes" role="note">
+<ul>
+<li>C'est quoi Git ? Inventé par Linus Torvalds, le créateur de Linux, il y a dix ans.</li>
+<li>Version control system</li>
+<li>Remplace SVN</li>
+<li>Largement adopté</li>
+</ul>
+</div>
 </section>
 <section id="git" class="slide level1">
 <h1>GIT =</h1>
 <h2 id="directed">Directed</h2>
 <h2 id="acyclic">Acyclic</h2>
 <h2 id="graph">Graph</h2>
+<div class="notes" role="note">
+<p>Fonctionne sur le principe d'un graphe orienté acyclique</p>
+</div>
 </section>
 <section id="reminder" class="slide level1">
 <h1>Reminder</h1>
 <p><img src="assets/commits.png" alt="Commits" class="w90"/></p>
+<div class="notes" role="note">
+<ul>
+<li>Commits = snapshot</li>
+<li>Add : crée un hash de tous les fichiers</li>
+<li>Commit : crée l'identifiant qui correspond au snapshot et à l'ensemble de ces hash</li>
+</ul>
+</div>
 </section>
 <section id="id" class="slide level1">
 <h1>ID =</h1>
@@ -367,11 +373,23 @@ h1.title {
 <li>Log message +</li>
 <li>Previous commit</li>
 </ul>
+<div class="notes" role="note">
+<p>ID unique</p>
+</div>
 </section>
-<section id="branches-and-references" class="slide level1">
-<h1>Branches and references</h1>
+<section id="branches" class="slide level1">
+<h1>Branches</h1>
 <video autoplay loop src="assets/branches.webm">
 </video>
+<div class="notes" role="note">
+<ul>
+<li>Branches = très simple avec Git, unlike SVN</li>
+<li>Branches = étiquettes vers un commit</li>
+<li>HEAD, tags = pareil</li>
+<li>Tracking branches are read only</li>
+<li>On peut revenir à n'importe quel commit ou en annuler comme on veut</li>
+</ul>
+</div>
 </section>
 <section class="slide level1">
 
@@ -387,35 +405,14 @@ section > p:first-child {
     width: 55%;    
 }
 </style>
-</section>
-<section id="branches" class="slide level1">
-<h1>Branches</h1>
-<h2 id="create-locally-and-remotely">Create locally and remotely</h2>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> checkout -b <span class="kw">&lt;</span>new-branch<span class="kw">&gt;</span>
-
-<span class="kw">git</span> push origin <span class="kw">&lt;</span>branch<span class="kw">&gt;</span>:<span class="kw">&lt;</span>branch<span class="kw">&gt;</span></code></pre></div>
-</section>
-<section id="branches-1" class="slide level1">
-<h1>Branches</h1>
-<h2 id="delete-locally-and-remotely">Delete locally and remotely</h2>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> branch -d <span class="kw">&lt;</span>branch<span class="kw">&gt;</span>
-
-<span class="kw">git</span> push origin --delete <span class="kw">&lt;</span>branch<span class="kw">&gt;</span></code></pre></div>
-</section>
-<section id="online-platforms" class="slide level1">
-<h1>Online platforms</h1>
-<h2 id="github">Github</h2>
-<h2 id="gitlab">Gitlab</h2>
-<h2 id="travis-ci">Travis-ci</h2>
+<div class="notes" role="note">
+<p>Workflow que j'ai adopté. Il en existe d'autre. Celui-ci est répandu. A vous de choisir.</p>
+</div>
 </section>
 <section id="pull-requests" class="slide level1">
 <h1>Pull requests</h1>
 <ul>
-<li>Rebase
-<ul>
-<li><code>git rebase origin/develop</code></li>
-</ul></li>
-<li>Merge
+<li><code>merge</code>
 <ul>
 <li><code>git merge origin/feature-x</code>
 <ul>
@@ -423,19 +420,30 @@ section > p:first-child {
 <li><code>--ff-only</code></li>
 </ul></li>
 </ul></li>
-<li>Reset
+<li><code>rebase</code>
+<ul>
+<li><code>git rebase origin/develop</code></li>
+</ul></li>
+<li><code>reset</code>
 <ul>
 <li><code>git reset --hard origin/xyz</code></li>
 </ul></li>
 </ul>
+<div class="notes" role="note">
+
+</div>
 </section>
 <section id="commands" class="slide level1">
 <h1>Commands</h1>
 <ul>
-<li>bisect</li>
-<li>revert</li>
-<li>cherry-pick</li>
+<li><code>pull</code> (<code>fetch</code> + <code>merge</code>)</li>
+<li><code>bisect</code></li>
+<li><code>revert</code></li>
+<li><code>cherry-pick</code></li>
 </ul>
+<div class="notes" role="note">
+
+</div>
 </section>
 <section id="thanks" class="slide level1">
 <h1>Thanks</h1>

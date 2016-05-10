@@ -1,25 +1,3 @@
-ME
-
-prononciation, histoire de git (linus, versioning), plateformes (github, gitlab, own server)
-bref rappel : working directory, index, repo (local & distant), branches (sera détaillé plus tard)
-
 continuous delivery vs continuous integration
 http://scalarsoftware.com/assets/images/cdstoryline.png
 http://stackoverflow.com/questions/28608015/continuous-integration-vs-continuous-delivery-vs-continuous-deployment
-
-branches: pointer, comme les tags, HEAD
-interet: separer les périodes de développment, le travail de travail pour:
-- revenir en arrière facilement (supprimer tout une feature par ex)
-- idenfifier les bugs
-- avoir un histoire propre qui retrace l'histoire du code
-- ne pas pourrir les branches principales (develop et master) qui sont sensées être stables
-je présente un workflow que j'ai adopté, pas le meilleur, critiqué, certains disent qu'il faut un historique totalement linéaire: libre à chacun
-
-# GRAPH
-voilà concretement à quoi ressemble la vie d'un projet
-==> demo en live avec git lg dans timeshot
-
-
-
-
-git bisect
