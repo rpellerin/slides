@@ -1,3 +1,0 @@
-continuous delivery vs continuous integration
-http://scalarsoftware.com/assets/images/cdstoryline.png
-http://stackoverflow.com/questions/28608015/continuous-integration-vs-continuous-delivery-vs-continuous-deployment
