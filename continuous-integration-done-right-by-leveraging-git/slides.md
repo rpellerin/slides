@@ -1,4 +1,4 @@
-% Continuous ~~Delivery~~ Integration done right by leveraging Git 
+% Continuous Integration done right by leveraging Git 
 % Romain Pellerin
 % HumanTalks Compiègne 2016-05-10
 
@@ -14,7 +14,7 @@
 
 <style>
 h1.title {
-    font-size: 2.5em;    
+    font-size: 2.3em;    
 }
 .title footer span {
     font-size: .8em;    
