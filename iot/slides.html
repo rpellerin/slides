@@ -355,7 +355,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </section>
 <section class="slide level1">
 
-<video autoplay loop src="assets/video1.mp4">
+<video loop src="assets/video1.mp4">
 </video>
 <div class="pages" />
 <div class="notes" role="note">
@@ -705,30 +705,170 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <section id="representing-resources" class="slide level1">
 <h1>Representing resources</h1>
 <ul>
+<li>Operations
+<ul>
+<li>GET, PUT, POST, DELETE</li>
+</ul></li>
+<li>Content-negocation
+<ul>
 <li>JSON for machines</li>
 <li>HTML for human beings</li>
+</ul></li>
+<li>Status codes</li>
 </ul>
 <div class="pages" />
 <div class="notes" role="note">
+<p>operations or verbs add semantics</p>
 <p>JSON is lightweight, compared to XML PAGE 7!!!!</p>
 </div>
 </section>
+<section id="syndicating-things" class="slide level1">
+<h1> Syndicating things</h1>
+<ul>
+<li>Atom (GET operations)
+<ul>
+<li>Subscribe and poll from a server instead of device</li>
+<li>Web hooks (push): clients must have a public URI</li>
+</ul></li>
+</ul>
+<div class="pages" />
+
+</section>
+<section id="not-covered-2" class="slide level1">
+<h1>Not covered</h1>
+<ul>
+<li>Proxies</li>
+<li>Gateways</li>
+</ul>
+<div class="pages" />
+<div class="notes" role="note">
+<p>In some cases, it makes sense to hide the platform-dependent protocol to access the resources of a particular device, and to expose them as RESTful service provided by a gateway</p>
+</div>
+</section>
+<section id="mashups" class="slide level1">
+<h1>Mashups</h1>
+<p><img src="assets/mashup.png" alt="" class="w100"/></p>
+<div class="pages" />
+<div class="notes" role="note">
+<p>In this first example, we create a mashup to help households to understand their energy consumption and to be able to remotely monitor and control it.</p>
+<p>The idea of the “Energie Visible” 11 project is to offer a Web dashboard that enables people to visualize and control the energy consumption of their household appliances</p>
+<p>the dashboard can be im- plemented using any Web scripting language or tool (PHP, Ruby, Python, Java- Script, etc.).</p>
+</div>
+</section>
+<section id="not-covered-3" class="slide level1">
+<h1> Not covered</h1>
+<ul>
+<li>Business Intelligence Mashup: RESTful EPCIS</li>
+<li>A Mashup Editor for the Smart Home</li>
+<li>Real-Time Web of Things: to be discussed</li>
+<li>Finding and Describing Smart Things</li>
+<li>Sharing Smart Things</li>
+</ul>
+<div class="pages" />
+
+<div class="notes" role="note">
+<p>For real time, we should use other protocols RTP or RTSP, or XMPP (messaging protocol)</p>
+<p>describing: rdf or micro formats</p>
+<p>sharing: social media</p>
+</div>
+</section>
+<section id="conclusion" class="slide level1">
+<h1>Conclusion</h1>
+<h3 id="problems">Problems</h3>
+<ul>
+<li>HTTP adds communication overhead + increases response latency
+<ul>
+<li>Solution: caching?</li>
+</ul></li>
+<li>Security</li>
+</ul>
+<h3 id="advantages">Advantages</h3>
+<ul>
+<li>Simplication (same principles)</li>
+<li>Loose-coupling, scalability</li>
+</ul>
+<div class="pages" />
+<div class="notes" role="note">
+<p>many libraries, available to non-programmers</p>
+</div>
+</section>
+<section id="going-further" class="slide level1">
+<h1>Going further</h1>
+<h3 id="blog.romainpellerin.eudesigning-an-efficient-rest-api.html"><a href="http://blog.romainpellerin.eu/designing-an-efficient-rest-api.html">blog.romainpellerin.eu/designing-an-efficient-rest-api.html</a></h3>
+<div class="pages" />
+
+</section>
 <section id="the-things-network" class="slide level1">
 <h1> The Things Network</h1>
+<h3 id="thethingsnetwork.org"><a href="https://www.thethingsnetwork.org/">thethingsnetwork.org</a></h3>
 <div class="pages" />
 
 </section>
-<section id="hacks" class="slide level1">
-<h1>Hacks</h1>
-<p>Cam</p>
+<section id="the-things-network-1" class="slide level1">
+<h1> The Things Network</h1>
+<h3 id="thethingsnetwork.org-1">thethingsnetwork.org</h3>
+<video src="assets/things.mp4">
+</video>
 <div class="pages" />
 
 </section>
-<section id="discussion-topics" class="slide level1">
-<h1>Discussion topics</h1>
+<section id="discussion-hacks" class="slide level1">
+<h1>Discussion: Hacks</h1>
+<p><img src="assets/hack.png" alt="" class="w60"/></p>
+<div class="pages" />
+
+</section>
+<section id="discussion-topics-paper-1" class="slide level1">
+<h1>Discussion topics: paper 1</h1>
 <ul>
-<li>A</li>
-<li>B</li>
+<li>What are the reasons behind why IoT architectures are different from other conventional network architectures?
+<ul>
+<li>Which architecture for what situation?</li>
+</ul></li>
+<li>How can we apply Content Centric Networks (CCN) to enhance identification in an IoT environment instead of IP addresses?</li>
+<li>Enhancing security in current IoT protocols e.g. security concerns of ZigBee</li>
+</ul>
+<div class="pages" />
+
+</section>
+<section id="discussion-topics-paper-1-1" class="slide level1">
+<h1>Discussion topics: paper 1</h1>
+<ul>
+<li>Privacy issues</li>
+<li>What could be the solutions to address interference, particularly looking at the fact that this is an unlicensed spectrum?</li>
+<li>Standardization of IoT protocols and devices? Is it possible to have a single universal application layer protocol for IoT devices and applications to talk to each other, regardless of how they are physically connected?</li>
+</ul>
+<div class="pages" />
+
+</section>
+<section id="discussion-topics-paper-2" class="slide level1">
+<h1>Discussion topics: paper 2</h1>
+<ul>
+<li>Isn’t converting messages to HTTP (version 1.x or 2) requests expensive?</li>
+<li>Complexity of security and privacy issues in the Web of Things</li>
+<li>Quality of Service issues</li>
+<li>Regulation challenges in the era of the Web of Things</li>
+<li>HTTP 2 instead of HTTP 1.x?</li>
+</ul>
+<div class="pages" />
+
+</section>
+<section id="discussion-topics-paper-2-1" class="slide level1">
+<h1>Discussion topics: paper 2</h1>
+<ul>
+<li>HTTP introduces communication overhead and increases average latency. How to handle this issue?</li>
+<li>Can we use Web of things in Local Networks(Intranet of a company)?</li>
+<li>Is it implemented? Do we have Web of Things nowadays? If not why?</li>
+</ul>
+<div class="pages" />
+
+</section>
+<section id="discussion-topics-paper-2-2" class="slide level1">
+<h1>Discussion topics: paper 2</h1>
+<ul>
+<li>Alternative to HTTP for real-time web of things?</li>
+<li>Stateless has disadvantages: can not be distributed, etc</li>
+<li>Can it be successfully argued that the WoT structure follows Internet design principles including e2e principle? Because it seems hardly so.</li>
 </ul>
 <div class="pages" />
 

@@ -51,7 +51,7 @@ Picture, domain specific applications are interacting with domain independent se
 
 -------------------------------------------
 
-<video autoplay loop src="assets/video1.mp4" ></video>
+<video loop src="assets/video1.mp4" ></video>
 
 <div class="pages" />
 <div class="notes">
@@ -513,33 +513,188 @@ Resources are primarily structured hierarchically. So by accessing slash sensors
 
 # Representing resources
 
-- JSON for machines
-- HTML for human beings
+- Operations
+    - GET, PUT, POST, DELETE
+- Content-negocation
+    - JSON for machines
+    - HTML for human beings
+- Status codes
 
 <div class="pages" />
 <div class="notes">
+operations or verbs add semantics
+
 JSON is lightweight, compared to XML PAGE 7!!!!
 </div>
 
 -------------------------------------------
 
+# Syndicating things
+
+- Atom (GET operations)
+    - Subscribe and poll from a server instead of device
+    - Web hooks (push): clients must have a public URI
+
+<div class="pages" />
+
+-------------------------------------------
+
+# Not covered
+
+- Proxies
+- Gateways
+
+<div class="pages" />
+<div class="notes">
+In
+some cases, it makes sense to hide the platform-dependent protocol to access the
+resources of a particular device, and to expose them as RESTful service provided
+by a gateway
+</div>
+
+-------------------------------------------
+
+# Mashups
+
+<img src="assets/mashup.png" alt="" class="w100"/>
+
+<div class="pages" />
+<div class="notes">
+In this first example, we create a mashup to help households to understand their
+energy consumption and to be able to remotely monitor and control it.
+
+The idea of the “Energie Visible” 11 project is to offer a Web dashboard that
+enables people to visualize and control the energy consumption of their household
+appliances
+
+the dashboard can be im-
+plemented using any Web scripting language or tool (PHP, Ruby, Python, Java-
+Script, etc.).
+</div>
+
+-------------------------------------------
+
+# Not covered
+
+- Business Intelligence Mashup: RESTful EPCIS
+- A Mashup Editor for the Smart Home
+- Real-Time Web of Things: to be discussed
+- Finding and Describing Smart Things
+- Sharing Smart Things
+
+<div class="pages" />
+
+<div class="notes">
+For real time, we should use other protocols RTP or RTSP, or XMPP (messaging protocol)
+
+describing: rdf or micro formats
+
+sharing: social media
+</div>
+
+-------------------------------------------
+
+# Conclusion
+
+### Problems
+
+- HTTP adds communication overhead + increases response latency
+    - Solution: caching?
+- Security
+
+### Advantages
+
+- Simplication (same principles)
+- Loose-coupling, scalability
+
+<div class="pages" />
+<div class="notes">
+many libraries, available to non-programmers
+</div>
+
+-------------------------------------------
+
+# Going further
+
+### [blog.romainpellerin.eu/designing-an-efficient-rest-api.html](http://blog.romainpellerin.eu/designing-an-efficient-rest-api.html)
+
+<div class="pages" />
+
+-------------------------------------------
+
 # The Things Network
 
-<div class="pages" />
-
--------------------------------------------
-
-# Hacks
-
-Cam
+### [thethingsnetwork.org](https://www.thethingsnetwork.org/)
 
 <div class="pages" />
 
 -------------------------------------------
 
-# Discussion topics
+# The Things Network
 
-- A
-- B
+### thethingsnetwork.org
+
+<video src="assets/things.mp4" ></video>
+
+<div class="pages" />
+
+-------------------------------------------
+
+# Discussion: Hacks
+
+<img src="assets/hack.png" alt="" class="w60"/>
+
+<div class="pages" />
+
+-------------------------------------------
+
+# Discussion topics: paper 1
+
+- What are the reasons behind why IoT architectures are different from other conventional network architectures?
+    - Which architecture for what situation?
+- How can we apply Content Centric Networks (CCN) to enhance identification in an IoT environment instead of IP addresses?
+- Enhancing security in current IoT protocols e.g. security concerns of ZigBee
+
+<div class="pages" />
+
+-------------------------------------------
+
+# Discussion topics: paper 1
+
+- Privacy issues
+- What could be the solutions to address interference, particularly looking at the fact that this is an unlicensed spectrum?
+- Standardization of IoT protocols and devices? Is it possible to have a single universal application layer protocol for IoT devices and applications to talk to each other, regardless of how they are physically connected?
+
+<div class="pages" />
+
+-------------------------------------------
+
+# Discussion topics: paper 2
+
+- Isn’t converting messages to HTTP (version 1.x or 2) requests expensive?
+- Complexity of security and privacy issues in the Web of Things
+- Quality of Service issues
+- Regulation challenges in the era of the Web of Things
+- HTTP 2 instead of HTTP 1.x?
+
+<div class="pages" />
+
+-------------------------------------------
+
+# Discussion topics: paper 2
+
+- HTTP introduces communication overhead and increases average latency. How to handle this issue?
+- Can we use Web of things in Local Networks(Intranet of a company)?
+- Is it implemented? Do we have Web of Things nowadays? If not why?
+
+<div class="pages" />
+
+-------------------------------------------
+
+# Discussion topics: paper 2
+
+- Alternative to HTTP for real-time web of things?
+- Stateless has disadvantages: can not be distributed, etc
+- Can it be successfully argued that the WoT structure follows Internet design principles including e2e principle? Because it seems hardly so.
 
 <div class="pages" />
