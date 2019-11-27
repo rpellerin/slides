@@ -1,10 +1,10 @@
 # slides
 
 ```bash
-sudo aptitude install haskell-platform
+sudo apt install haskell-platform
 cabal update
-cabal install pandoc
-cabal install pandoc-citeproc
+cabal new-install pandoc
+cabal new-install pandoc-citeproc
 
 pandoc -t dzslides \
 	--self-contained \
