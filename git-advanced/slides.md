@@ -259,13 +259,16 @@ Rebasing rewrites history.
 
 # `git checkout`
 
-- Checkout branch:
+- Create branch:<br/>**`git checkout -b feature origin/master`**
+- Checkout branch:<br/>**`git checkout BRANCH`**
+- Checkout files at specific revision:<br/>**`git checkout SHA-1 -- file1 file2`**
 
-`git checkout BRANCH`
+---
 
-- Checkout files at specific revision:
+# `git branch`
 
-`git checkout SHA-1 -- file1 file2`
+- `git branch -vv`
+- `git branch -m new-name`
 
 ---
 
