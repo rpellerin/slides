@@ -296,6 +296,13 @@ Rebasing rewrites history.
 
 ---
 
+# `git stash`
+
+- `git stash`
+- `git stash pop`
+
+---
+
 # `git log`
 
 - `git log -p -- package.json`
