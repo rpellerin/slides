@@ -296,6 +296,21 @@ Rebasing rewrites history.
 
 ---
 
+## `git cherry-pick <SHA-1>`
+
+<br />
+
+Apply changes brought by a commit.
+
+---
+
+# `git push`
+
+- `git push --force`
+- `git push --force-with-lease`
+
+---
+
 # `git stash`
 
 - `git stash`
