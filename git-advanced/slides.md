@@ -1,14 +1,6 @@
 % Git: advanced concepts
-% Romain Pellerin
+% Florent Beaurain & Romain Pellerin
 % Doctolib
-
-# In a nutshell
-
-1. Versioning: keep every change made to files
-2. Branching: develop new features while fixing bugs on a production release
-3. Decentralized & Collaborative
-
----
 
 # Outline
 
@@ -20,6 +12,15 @@
 
 <br />
 <br />
+
+<!-- # In a nutshell
+
+1. Versioning: keep every change made to files
+2. Branching: develop new features while fixing bugs on a production release
+3. Decentralized & Collaborative
+
+-->
+
 
 ---
 
