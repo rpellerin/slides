@@ -2,7 +2,7 @@
 
 ```bash
 sudo apt install haskell-platform
-cabal update
+cabal new-update
 cabal new-install pandoc
 cabal new-install pandoc-citeproc
 
